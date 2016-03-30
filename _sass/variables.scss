@@ -1,0 +1,24 @@
+$light-first: #8C73B6;
+$dark-first: #3D1461;
+$middle-first: #82298A;
+
+$dark-second: #A69C91;
+$light-second: #F3F5F4;
+
+
+$font: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+$buttons: (
+    primary: (
+        off: (
+            text: $light-second,
+            background: $middle-first,
+            border: $middle-first
+        ),
+        on: (
+            text: $light-second,
+            background: darken($middle-first, 10%),
+            border: darken($middle-first, 10%)
+        )
+    )
+);

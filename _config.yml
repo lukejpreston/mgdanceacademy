@@ -1,0 +1,14 @@
+highlighter: rouge
+permalink: pretty
+title: "MG Dance Academy"
+description: "The home of MGDA, teaching dance in Kendal, The Lakes, Cumbria"
+color: "#82298A"
+keywords: "dance,dancing,teach,teaching,lakes,kendal,cumbria,mgda,mgdanceacademy"
+twitter: "@MGDanceAcademy"
+navigation: [ { name: "home", href: "/"}, { name: "classes", href: "/classes"}, { name: "events", href: "/events"}, { name: "contacts", href: "/contacts"}, { name: "gallery", href: "/gallery"}, { name: "friends", href: "/friends"}]
+footer: {
+    left: '<a class="column one-third" href="mailto:melaniegpreston@gmail.com">Melanie Preston</a>',
+    right: "Kendal, The Lake District, Cumbria",
+    icons: [{ href: "https://twitter.com/MGDanceAcademy", kind: "twitter" }, { href: "https://www.facebook.com/MG-Dance-Academy-1682675975343180/?fref=ts", kind: "facebook2" }, { href: "https://www.instagram.com/MGDanceAcademy/", kind: "instagram" }, { href: "https://github.com/lukejpreston/mgdanceacademy/", kind: "github" }]
+  }
+url: "http://lukejpreston.github.io/you_eye"

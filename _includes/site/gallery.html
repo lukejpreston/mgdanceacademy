@@ -1,0 +1,10 @@
+<div class="gallery row">
+    <div class="message">
+        <h4>{{include.title}}</h4>
+        <p>{{include.message}}</p>
+    </div>
+    <div class="image">
+        <img class="u-full-width" src="{{include.cover_file}}" onclick='GoTo(0, {{include.slides | jsonify}})'>
+        <button class="u-full-width button-primary" onclick='GoTo(0, {{include.slides | jsonify}})'><span class="icon icon-new-tab"></span> View all Images</button>
+    </div>
+</div>

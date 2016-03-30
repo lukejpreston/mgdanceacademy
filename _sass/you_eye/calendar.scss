@@ -1,0 +1,62 @@
+.calendar {
+    width: 100%;
+    max-width: 275px;
+    & .options {
+        display: inline-block;
+        float: left;
+        width: 70%;
+        height: 38px;
+        border-radius: 4px 0 0 4px;
+        background-color: $middle-first;
+        border-color: $middle-first;
+        &:hover {
+            background-color: darken($middle-first, 5%);
+            border-color: darken($middle-first, 5%);
+        }
+        & select {
+            width: 100%;
+            margin: 0;
+            color: $light-second;
+            background-color: $middle-first;
+            border-color: $middle-first;
+            cursor: pointer;
+            &:hover {
+                color: $light-second;
+                background-color: darken($middle-first, 5%);
+                border-color: darken($middle-first, 5%);
+            }
+        }
+    }
+    & .add {
+        display: inline-block;
+        float: left;
+        width: 29%;
+        border-radius: 0 4px 4px 0;
+        margin: 0;
+        margin-left: 0.75%;
+        padding: 0;
+        & .icon {
+            font-size: 1.4rem;
+            color: $light-second;
+        }
+    }
+}
+
+@media (max-width: 750px) {
+    .calendar {
+        width: 100%;
+        max-width: 175px;
+        & .options,
+        & .add {
+            width: 100%;
+            margin: 0;
+        }
+        & .options {
+            border-radius: 4px 4px 0 0;
+            margin-bottom: 3px;
+        }
+        & .add {
+            border-radius: 0 0 4px 4px;
+        }
+    }
+}

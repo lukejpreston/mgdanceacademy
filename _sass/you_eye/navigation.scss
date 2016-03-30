@@ -1,0 +1,30 @@
+.navigation {
+    .nav {
+        display: inline-block;
+        float: left;
+        text-align: center;
+        padding: 1%;
+        &.selected {
+            background-color: $light-second;
+            color: $dark-first;
+            &:hover {
+                background-color: darken($light-second, 10%);
+                color: darken($dark-first, 10%);
+            }
+        }
+    }
+}
+
+@media (max-width: 750px) {
+    .nav {
+        width: 100% !important;
+    }
+}
+
+@for $num from 1 to 12 {
+    .navigation-#{$num} {
+        .nav {
+            width: 100/$num - 2%;
+        }
+    }
+}

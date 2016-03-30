@@ -1,0 +1,16 @@
+a {
+    text-decoration: none;
+}
+
+.body {
+    padding: 3em 0;
+    background-color: $dark-first;
+}
+
+@import "header";
+@import "cookies";
+@import "footer";
+
+@import "navigation";
+@import "location";
+@import "calendar";

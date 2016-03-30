@@ -1,0 +1,9 @@
+<div class="container navigation navigation-{{site.navigation | size}}">
+{% for nav in site.navigation %}
+    {% if nav.name == page.nav%}
+        <a href="{{nav.href}}" class="nav selected"><span>{{nav.name | upcase}}</span></a>
+    {% else %}
+        <a href="{{nav.href}}" class="nav"><span>{{nav.name | upcase}}</span></a>
+    {% endif %}
+{% endfor %}
+</div>

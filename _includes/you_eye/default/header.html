@@ -1,0 +1,19 @@
+<header>
+    {% if site.uses_cookies %}
+        {% include you_eye/components/cookies.html %}
+    {% endif %}
+    {% if page.banner %}
+        <div class="container">
+            <img class="banner" src="{{page.banner_src}}">
+            <span class="banner_title">{{page.banner_title}}</span>
+        </div>
+    {% endif %}
+    <div class="head container">
+        <div class="columns twelve">
+            <a class="columns four" href="/">
+                <img class="head_image" src="/assets/mgda.png">
+            </a>
+        </div>
+    </div>
+    {% include you_eye/components/navigation.html %}
+</header>

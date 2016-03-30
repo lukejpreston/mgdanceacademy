@@ -1,0 +1,12 @@
+<footer>
+    <div class="container">
+        <span class="column one-third left">{{site.footer.left}}</span>
+        <span class="column one-third center">
+            {% for icon in site.footer.icons %}
+                <a target="_blank" href="{{icon.href}}"><span class="icon icon-{{icon.kind}}"></a>
+            {% endfor%}
+        </span>
+        <span class="column one-third right">{{site.footer.right}}</span>
+    </div>
+</footer>
+{% include you_eye/components/photoswipe.html %}

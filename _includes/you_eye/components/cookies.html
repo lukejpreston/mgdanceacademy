@@ -1,0 +1,37 @@
+<div class="hidden cookies u-full-width">
+    <div class="container">
+        <span class="message">{{site.cookies_message}}By using this site you consent to using our cookies</span>
+        <a href='#' onclick='closeCookies()' class="u-pull-right"><span class="icon icon-cancel-circle"></span></a>
+    </div>
+</div>
+<script type="text/javascript" src="/scripts/libs/cookies.min.js"></script>
+<script type="text/javascript">
+var MAX_NOTIFICATIONS = 2
+
+var notified = getNotified()
+if (getNotified() < MAX_NOTIFICATIONS) {
+    showCookies()
+} else {
+    closeCookies()
+}
+Cookies.expire('notified')
+Cookies.set('notified', notified + 1, {
+    expires: Infinity
+})
+
+function showCookies() {
+    dom.query('.cookies').removeClass('hidden')
+}
+
+function closeCookies() {
+    dom.query('.cookies').addClass('hidden')
+    Cookies.expire('notified')
+    Cookies.set('notified', MAX_NOTIFICATIONS, {
+        expires: Infinity
+    })
+}
+
+function getNotified() {
+    return parseInt(Cookies.get('notified') || 0)
+}
+</script>

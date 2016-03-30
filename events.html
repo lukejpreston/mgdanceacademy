@@ -1,0 +1,69 @@
+---
+layout: "you_eye/default"
+nav: "events"
+notification: events
+scheduledEvents:
+    - name: "The AAD Gala"
+      date: "Sunday 3rd April"
+      location: "Winter Gardens<br>Blackpool"
+      google: ""
+      message: "A show with dancers from around the country of all ages. For more information or where to buy tickets go to the <a href='the-aad.org.uk'>AAD website</a> or <a href='/contacts'>contact</a> Miss Mel"
+      add_to_cal_title: "The AAD Gala"
+      add_to_cal_description: "The AAD Gala"
+      add_to_cal_location: "Winter Gardens, Blackpool"
+      add_to_cal_start_time: "2016-04-03 00:00:00"
+      add_to_cal_end_time: "2016-04-03 23:59:59"
+    - name: "Kendal Classes Opening!"
+      date: "Monday 4th April from 4pm"
+      location: "Hallgarth community centre, Kendal"
+      google: ""
+      image: "/images/events/MGDA-poster-1.jpg"
+      message: "Kendal classes are finally here! Come to try out the classes for free! Babes (3-6yrs) class 4pm, junior (7-11yrs) class 5pm and inters (12yrs up) 6pm.<br>Classes are only free on this day<br>Go to <a href='/classes'>classes</a> for more information"
+      add_to_cal_title: "Kendal Classes Opening!"
+      add_to_cal_description: "Kendal Classes Opening!"
+      add_to_cal_location: "Hallgarth community centre, Kendal"
+      add_to_cal_start_time: "2016-04-04 16:00:00"
+      add_to_cal_end_time: "2016-04-04 19:00:00"
+    - name: "One, Singular Sensation"
+      date: "Sunday 3rd April"
+      location: "Sands Centre, Carlisle"
+      google: "https://www.google.co.uk/maps/place/The+Sands+Centre/@54.8996862,-2.9364539,17z/data=!3m1!4b1!4m2!3m1!1s0x487d1a239c937443:0x9c7e7dfe843ccaa8"
+      image: "/images/events/one_singluar_sensation.jpg"
+      message: "The Maria Frances School of Dance annual show. A fantastic celebration of dance with adorable babes to amazing seniors. You can book your tickets today by going to the <a href='http://www.thesandscentre.co.uk/events/Maria-Frances-School-of-Dance-341'>Sands Centre</a>"
+      add_to_cal_title: "One, Singular Sensation"
+      add_to_cal_description: "The Maria Frances School of Dance annual show. A fantastic celebration of dance with adorable babes to amazing seniors."
+      add_to_cal_location: "Newmarket Rd, Carlisle CA1 1JQ"
+      add_to_cal_start_time: "2016-06-26 18:00:00"
+      add_to_cal_end_time: "2016-06-26 21:00:00"
+---
+<div class="events">
+    {% for event in page.scheduledEvents %}
+        {% if event.image != null %}
+            <div class="row event">
+                <div class="column one-half">
+                    <h3 class="columns twelve">{{event.name}}</h3>
+                    <p class="columns twelve">{{event.date}}</p>
+                    {% include you_eye/components/add_to_cal.html title=event.add_to_cal_title description=event.add_to_cal_description location=event.add_to_cal_location start_time=event.add_to_cal_start_time end_time=event.add_to_cal_end_time day=event.add_to_cal_day %}
+                    {% include you_eye/components/location.html location=event.location google=event.google%}
+                    <p class="columns twelve">{{event.message}}</p>
+                </div>
+                <div class="column one-half">
+                    <img class="u-full-width" src="{{event.image}}">
+                </div>
+            </div>
+        {% else %}
+            <div class="row event">
+                <div class="column one-half">
+                    <h3 class="columns twelve">{{event.name}}</h3>
+                    <p class="columns twelve">{{event.date}}</p>
+                    {% include you_eye/components/add_to_cal.html title=event.add_to_cal_title description=event.add_to_cal_description location=event.add_to_cal_location start_time=event.add_to_cal_start_time end_time=event.add_to_cal_end_time day=event.add_to_cal_day %}
+                    {% include you_eye/components/location.html location=event.location google=event.google%}
+                </div>
+                <div class="column one-half">
+                    <p class="columns twelve">{{event.message}}</p>
+                </div>
+            </div>
+        {% endif %}
+    {% endfor %}
+</div>
+<script type="text/javascript" src="/scripts/your_eye/add_to_cal.js"></script>

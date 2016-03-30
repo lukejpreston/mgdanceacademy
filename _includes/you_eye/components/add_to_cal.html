@@ -1,0 +1,20 @@
+<div class="calendar">
+    <div class="options">
+        <select onchange="
+                        addToCal(this.parentElement.parentElement.children[1], this.selectedOptions[0].id,
+                        '{{include.title}}',
+                        '{{include.description}}',
+                        '{{include.location}}',
+                        '{{include.start_time}}',
+                        '{{include.end_time}}',
+                        '{{include.day}}')">
+            <option>Select Calendar Type</option>
+            <option id="ical">iCalendar</option>
+            <option id="google">Google</option>
+            <option id="outlook">Outlook</option>
+            <option id="outlookonline">Outlook Online</option>
+            <option id="yahoo">Yahoo!</option>
+        </select>
+    </div>
+    <a class="add button button-primary" target="_blank"><span class="icon icon-calendar"></span> Add</a>
+</div>

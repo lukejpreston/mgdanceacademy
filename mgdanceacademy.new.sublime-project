@@ -1,0 +1,15 @@
+{
+    "folders": [
+        {
+            "name": "MGDA",
+            "path": ".",
+            "folder_exclude_patterns": [
+                "_site",
+                ".sass-cache",
+            ],
+            "file_exclude_patterns": [
+                "Gemfile.lock"
+            ]
+        }
+    ]
+}
