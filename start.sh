@@ -1,0 +1,1 @@
+find . -type f \( -name "*.yml" \) | entr ./serve.sh
