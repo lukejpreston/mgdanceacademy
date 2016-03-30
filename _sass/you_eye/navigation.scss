@@ -1,15 +1,16 @@
 .navigation {
     .nav {
         display: inline-block;
+        font-weight: bold;
         float: left;
         text-align: center;
         padding: 1%;
         &.selected {
             background-color: $light-second;
-            color: $dark-first;
+            color: darken($dark-second, 10%);
             &:hover {
                 background-color: darken($light-second, 10%);
-                color: darken($dark-first, 10%);
+                color: darken($dark-second, 20%);
             }
         }
     }

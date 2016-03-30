@@ -3,8 +3,8 @@ a {
 }
 
 .body {
-    padding: 3em 0;
-    background-color: $dark-first;
+    background-color: lighten($dark-first, 7.5%);
+    padding: 2em 0;
 }
 
 @import "header";

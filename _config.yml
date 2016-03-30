@@ -11,4 +11,5 @@ footer: {
     right: "Kendal, The Lake District, Cumbria",
     icons: [{ href: "https://twitter.com/MGDanceAcademy", kind: "twitter" }, { href: "https://www.facebook.com/MG-Dance-Academy-1682675975343180/?fref=ts", kind: "facebook2" }, { href: "https://www.instagram.com/MGDanceAcademy/", kind: "instagram" }, { href: "https://github.com/lukejpreston/mgdanceacademy/", kind: "github" }]
   }
-url: "http://lukejpreston.github.io/you_eye"
+url: "http://mgdanceacademy.com"
+email: "melaniegpreston@gmail.com"
