@@ -1,0 +1,17 @@
+.contacts {
+    & .email_form {
+        margin: 1em;
+        & textarea {
+            min-height: 15em;
+        }
+    }
+    & .direct {
+        margin-top: 2em;
+        border-top: 1px solid;
+    }
+}
+
+
+.thanks {
+    text-align: center;
+}

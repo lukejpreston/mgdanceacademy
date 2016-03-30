@@ -1,0 +1,17 @@
+.home {
+    font-size: 1.3em;
+    & .offer {
+        & ul {
+            font-weight: bold;
+            list-style: none;
+        }
+        & li {
+            padding-left: 2em;
+            &:before {
+                font-family: 'IcoMoon-Free';
+                content: "\e9d9";
+                padding-right: 1rem;
+            }
+        }
+    }
+}
