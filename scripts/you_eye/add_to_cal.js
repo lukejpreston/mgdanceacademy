@@ -23,7 +23,7 @@ function addToCal(button, type, title, description, location, start, end, day) {
         addToCalUrl += '&vjs=1.5'
         addToCalUrl += '&e[0][privacy]=private'
         addToCalUrl += '&e[0][timezone]=Europe%2FLondon'
-        addToCalUrl += '&e[0][organizer]=' + escape('Melanie Preston')
+        addToCalUrl += '&e[0][organizer]=' + escape('{{site.owner}}')
         addToCalUrl += '&e[0][organizer_email]' + escape('{{site.email}}')
 
 
