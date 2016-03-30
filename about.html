@@ -3,43 +3,20 @@ layout: "you_eye/default"
 nav: "about"
 ---
 
-<div class="home">
-    <div class="about">
-        <div class="title">
-            <span>MG Dance Academy<br>Great teaching in a caring environment</span>
-        </div>
-        <div class="offer">
-            <ul>
-                <li>Ballet</li>
-                <li>Tap</li>
-                <li>Modern</li>
-                <li>Acro</li>
-                <li>Exams in the AAD syllabus</li>
-                <li>Competitions</li>
-                <li>Shows</li>
-                <li>Medals</li>
-                <li>Beginners to advanced welcome</li>
-            </ul>
-        </div>
-    </div>
-    <div class="mel">
-        <figure class="u-full-width">
-            <img src="/images/melanie_headshot.jpg">
-            <figcaption>
-                Melanie Preston
-                <br>Principal of MG Dance Academy
-            </figcaption>
-        </figure>
-    </div>
-    <div class="about_mel columns twelve">
+<div>
+    <div class="columns nine">
         <h5>About Melanie</h5>
         <p>
             The principal of MGDA, Melanie has been dancing since she was two years old. Melanie has qualifications from the AAD as well as GCSEs and A Level in Dance, she also has a BA(Hons) in Dance, Performance and Teaching from UCLan. She has returned from London after teaching dance for over a year to bring all her knowledge back home to The Lakes
         </p>
     </div>
-    <div class="gallery columns twelve">
-        <img class="column one-half" src='/images/carlisle/0.png' onclick='GoTo(0, {{page.gallery | jsonify}} )' />
-        <img class="column one-half" src='/images/carlisle/6.png' onclick='GoTo(1, {{page.gallery | jsonify}} )' />
+    <div class="columns three">
+
+            <img src="/images/melanie_headshot.jpg" class="u-full-width">
+            <span>
+                Melanie Preston
+                <br>Principal of MG Dance Academy
+            </span>
+
     </div>
 </div>
-{% include you_eye/components/photoswipe.html %}
