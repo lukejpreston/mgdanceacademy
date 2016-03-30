@@ -177,71 +177,86 @@ footer {
 
 // ================ PAGES ================ //
 .home {
-    & .about {
-        width: 67%;
-        margin-right: 3%;
-        display: inline-block;
-        float: left;
-        & .title {
-            font-size: 1.8em;
+    font-size: 1.3em;
+    & .offer {
+        & ul {
             font-weight: bold;
-            background-color: darken($middle-first, 5%);
-            padding: 1.3rem;
-            margin-bottom: 1em;
-            border-radius: 4px;
+            list-style: none;
         }
-        & .offer {
-            font-size: 1.3em;
-            & ul {
-                font-weight: bold;
-                list-style: none;
-            }
-            & li {
-                padding-left: 2em;
-                &:before {
-                    font-family: 'IcoMoon-Free';
-                    content: "\e9d9";
-                    padding-right: 1rem;
-                }
+        & li {
+            padding-left: 2em;
+            &:before {
+                font-family: 'IcoMoon-Free';
+                content: "\e9d9";
+                padding-right: 1rem;
             }
         }
     }
-    & .mel {
-        width: 30%;
-        display: inline-block;
-        float: left;
-        & img {
-            width: 100%;
-            border-radius: 4px;
-        }
-        & figcaption {
-            background-color: darken($middle-first, 5%);
-            padding: 1.3rem;
-            border-radius: 4px;
-        }
-    }
-    & .about_mel {
-        & h5 {
-            margin: 1rem 0;
-        }
-        font-size: 1.6rem;
-        text-align: justify;
-    }
-    & .gallery img {
-        cursor: pointer;
-        margin-bottom: 1rem;
-        border-radius: 4px;
-    }
 }
 
-@media (max-width: 550px) {
-    .mel,
-    .about {
-        margin: 0;
-        width: 100% !important;
-    }
-}
-
+// .home {
+//     & .about {
+//         width: 67%;
+//         margin-right: 3%;
+//         display: inline-block;
+//         float: left;
+//         & .title {
+//             font-size: 1.8em;
+//             font-weight: bold;
+//             padding: 1.3rem;
+//             margin-bottom: 1em;
+//             border-radius: 4px;
+//         }
+//         & .offer {
+//             font-size: 1.3em;
+//             & ul {
+//                 font-weight: bold;
+//                 list-style: none;
+//             }
+//             & li {
+//                 padding-left: 2em;
+//                 &:before {
+//                     font-family: 'IcoMoon-Free';
+//                     content: "\e9d9";
+//                     padding-right: 1rem;
+//                 }
+//             }
+//         }
+//     }
+//     & .mel {
+//         width: 30%;
+//         display: inline-block;
+//         float: left;
+//         & img {
+//             width: 100%;
+//             border-radius: 4px;
+//         }
+//         & figcaption {
+//             background-color: darken($middle-first, 5%);
+//             padding: 1.3rem;
+//             border-radius: 4px;
+//         }
+//     }
+//     & .about_mel {
+//         & h5 {
+//             margin: 1rem 0;
+//         }
+//         font-size: 1.6rem;
+//         text-align: justify;
+//     }
+//     & .gallery img {
+//         cursor: pointer;
+//         margin-bottom: 1rem;
+//         border-radius: 4px;
+//     }
+// }
+// @media (max-width: 550px) {
+//     .mel,
+//     .about {
+//         margin: 0;
+//         width: 100% !important;
+//     }
+// }
 .classes {
     & .info {
         font-size: 1.5em;
@@ -421,7 +436,6 @@ footer {
 }
 
 // ================ UTILS ================ //
-
 .utils {
     & .util .hidden {
         display: none !important;
