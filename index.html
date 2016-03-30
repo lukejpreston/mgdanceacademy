@@ -1,13 +1,6 @@
 ---
 layout: "you_eye/default"
 nav: "home"
-gallery:
-  - src: "/images/carlisle/L0.jpg"
-    w: 1600
-    h: 1067
-  - src: "/images/carlisle/L6.jpg"
-    w: 1600
-    h: 1067
 ---
 
 <div class="home">
@@ -29,9 +22,7 @@ gallery:
         <p>Whether you want to let loose, get fit, or learn to do the perfect pirouette, MG Dance Academy Welcomes you.</p>
     </div>
     <div class="gallery columns twelve">
-        <img class="column one-half" src='/images/carlisle/0.png' onclick='GoTo(0, {{page.gallery | jsonify}} )' />
-        <img class="column one-half" src='/images/carlisle/6.png' onclick='GoTo(1, {{page.gallery | jsonify}} )' />
+        <img class="column one-half" src='/images/carlisle/0.png' />
+        <img class="column one-half" src='/images/carlisle/6.png' />
     </div>
 </div>
-
-{% include you_eye/components/photoswipe.html %}
