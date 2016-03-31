@@ -5,7 +5,7 @@ description: "The home of MGDA, teaching dance in Kendal, The Lakes, Cumbria"
 color: "#82298A"
 keywords: "dance,dancing,teach,teaching,lakes,kendal,cumbria,mgda,mgdanceacademy"
 twitter: "@MGDanceAcademy"
-navigation: [ { name: "home", href: "/"}, { name: "about", href: "/about"}, { name: "classes", href: "/classes"}, { name: "events", href: "/events"}, { name: "contacts", href: "/contacts"}, { name: "gallery", href: "/gallery"}, { name: "friends", href: "/friends"}]
+navigation: [ { name: "home", href: ""}, { name: "about", href: "about"}, { name: "classes", href: "classes"}, { name: "events", href: "events"}, { name: "contacts", href: "contacts"}, { name: "gallery", href: "gallery"}, { name: "friends", href: "friends"}]
 footer: {
     left: '<a href="mailto:melaniegpreston@gmail.com">Melanie Preston</a>',
     right: "Kendal, The Lake District, Cumbria",

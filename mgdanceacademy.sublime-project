@@ -1,14 +1,15 @@
 {
     "folders": [
         {
-            "name": "MGDA",
+            "name": "mgdanceacademy",
             "path": ".",
             "folder_exclude_patterns": [
                 "_site",
-                ".sass-cache",
+                ".sass-cache"
             ],
             "file_exclude_patterns": [
-                "Gemfile.lock"
+                "Gemfile.lock",
+                "jekyll.pid"
             ]
         }
     ]

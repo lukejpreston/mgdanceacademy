@@ -20,9 +20,15 @@
     <meta name="twitter:image" content="{{site.url}}/assets/logo.png" />
     <meta property="twitter:url" content="{{site.url}}">
     <meta name="twitter:site" content="{{site.twitter}}" />
-
-    <link rel="shortcut icon" href="/assets/icon.png">
-    <link rel="stylesheet" href="/css/main.css">
-    <script type="text/javascript" src="/scripts/libs/photoswipe.min.js"></script>
-    <script type="text/javascript" src="/scripts/you_eye/dom.js"></script>
+    {% if jekyll.environment == "dev" %}
+        <link rel="shortcut icon" href="/assets/icon.png">
+        <link rel="stylesheet" href="/css/main.css">
+        <script type="text/javascript" src="/scripts/libs/photoswipe.min.js"></script>
+        <script type="text/javascript" src="/scripts/you_eye/dom.js"></script>
+    {% else %}
+        <link rel="shortcut icon" href="{{site.url}}/assets/icon.png">
+        <link rel="stylesheet" href="{{site.url}}/css/main.css">
+        <script type="text/javascript" src="{{site.url}}/scripts/libs/photoswipe.min.js"></script>
+        <script type="text/javascript" src="{{site.url}}/scripts/you_eye/dom.js"></script>
+    {% endif %}
 </head>

@@ -4,16 +4,13 @@
     {% endif %}
     {% if page.banner %}
         <div class="container">
+        {% if jekyll.environment == "dev" %}
             <img class="banner" src="{{page.banner_src}}">
+        {% else %}
+            <img class="banner" src="{{site.url}}{{page.banner_src}}">
+        {% endif %}
             <span class="banner_title">{{page.banner_title}}</span>
         </div>
     {% endif %}
-    <div class="head container">
-        <div class="columns twelve">
-            <a class="columns four" href="/">
-                <img class="head_image" src="/assets/mgda.png">
-            </a>
-        </div>
-    </div>
     {% include you_eye/components/navigation.html %}
 </header>
