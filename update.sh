@@ -1,0 +1,1 @@
+cd ../you_eye; ./create.js name mgdanceacademy dir ../mgdanceacademy
