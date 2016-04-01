@@ -1,1 +1,1 @@
-cd ../you_eye; ./create.js name mgdanceacademy dir ../mgdanceacademy
+cd ../you_eye; ./create.sh mgdanceacademy ../mgdanceacademy
