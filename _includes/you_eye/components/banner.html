@@ -1,12 +1,27 @@
-<div class="container">
-    {% if include.banner_src %}
-        {% if jekyll.environment == "dev" %}
-            <img class="banner" src="{{include.banner_src}}">
-        {% else %}
-            <img class="banner" src="{{site.url}}{{include.banner_src}}">
+{% if site.banner_src or site.banner_title %}
+    <div class="container">
+        {% if site.banner_src %}
+            {% if jekyll.environment == "dev" %}
+                <img class="banner_src" src="{{site.banner_src}}">
+            {% else %}
+                <img class="banner_src" src="{{site.url}}{{site.banner_src}}">
+            {% endif %}
         {% endif %}
-    {% endif %}
-    {% if include.banner_src %}
-        <span class="banner_title">{{include.banner_title}}</span>
-    {% endif %}
-</div>
+        {% if site.banner_src %}
+            <span class="banner_title">{{site.banner_title}}</span>
+        {% endif %}
+    </div>
+{% else if page.banner_src or page.banner_title %}
+    <div class="container">
+        {% if page.banner_src %}
+            {% if jekyll.environment == "dev" %}
+                <img class="banner_src" src="{{page.banner_src}}">
+            {% else %}
+                <img class="banner_src" src="{{page.url}}{{page.banner_src}}">
+            {% endif %}
+        {% endif %}
+        {% if site.banner_src %}
+            <span class="banner_title">{{site.banner_title}}</span>
+        {% endif %}
+    </div>
+{% endif %}

@@ -2,10 +2,6 @@
     {% if site.uses_cookies %}
         {% include you_eye/components/cookies.html %}
     {% endif %}
-    {% if page.banner_src or page.banner_title %}
-        {% include you_eye/components/banner.html %}
-    {% else if site.banner_src or site.banner_title %}
-        {% include you_eye/components/banner.html %}
-    {% endif %}
+    {% include you_eye/components/banner.html %}
     {% include you_eye/components/navigation.html %}
 </header>
