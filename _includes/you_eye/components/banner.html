@@ -2,7 +2,7 @@
     <div class="container">
         {% if site.banner_src %}
             {% if jekyll.environment == "dev" %}
-                <img class="banner_src" src="{{site.banner_src}}">
+                <img class="banner_src" src="/{{site.banner_src}}">
             {% else %}
                 <img class="banner_src" src="{{site.url}}{{site.banner_src}}">
             {% endif %}
@@ -15,13 +15,13 @@
     <div class="container">
         {% if page.banner_src %}
             {% if jekyll.environment == "dev" %}
-                <img class="banner_src" src="{{page.banner_src}}">
+                <img class="banner_src" src="/{{page.banner_src}}">
             {% else %}
-                <img class="banner_src" src="{{page.url}}{{page.banner_src}}">
+                <img class="banner_src" src="{{site.url}}{{page.banner_src}}">
             {% endif %}
         {% endif %}
-        {% if site.banner_src %}
-            <span class="banner_title">{{site.banner_title}}</span>
+        {% if page.banner_title %}
+            <span class="banner_title">{{page.banner_title}}</span>
         {% endif %}
     </div>
 {% endif %}
