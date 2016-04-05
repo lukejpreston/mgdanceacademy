@@ -10,3 +10,8 @@
     </div>
 </footer>
 {% include you_eye/components/photoswipe.html %}
+{% if jekyll.environment == "dev" %}
+    <script type="text/javascript" src="/scripts/libs/anijs-min.js"></script>
+{% else %}
+    <script type="text/javascript" src="{{site.url}}/scripts/libs/anijs-min.js"></script>
+{% endif %}
