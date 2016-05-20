@@ -1796,7 +1796,6 @@ a .icon {
     font-size: 1em;
     padding: 0.4rem;
     &:hover {
-        color: $dark-second;
+        color: darken($light-second, 10%);
     }
 }
-

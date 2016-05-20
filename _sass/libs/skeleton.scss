@@ -231,6 +231,22 @@ a:hover {
     color: darken($light-second, 15%);
 }
 
+::-webkit-input-placeholder {
+     color: darken($light-second, 15%);
+}
+
+:-moz-placeholder {
+     color: darken($light-second, 15%);
+}
+
+::-moz-placeholder {
+    color: darken($light-second, 15%);
+}
+
+:-ms-input-placeholder {
+    color: darken($light-second, 15%);
+}
+
 .button,
 button,
 input[type="submit"],
