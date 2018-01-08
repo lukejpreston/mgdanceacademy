@@ -1,8 +1,0 @@
-_site
-.sass-cache
-Gemfile.lock
-
-jekyll.pid
-
-*.sublime-workspace
-.DS_Store
