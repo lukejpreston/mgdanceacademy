@@ -1,7 +1,10 @@
 import React from 'react'
+import Hero from './hero'
 
 const Component = (props) => {
-  return <div>hello</div>
+  return <div>
+    <Hero />
+  </div>
 }
 
 export default Component

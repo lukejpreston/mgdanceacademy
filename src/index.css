@@ -24,5 +24,72 @@
 }
 
 body {
+  margin: 0;
   font-family: 'Poppins', sans-serif;
+}
+
+.hero {
+  background-color: #9E29A8;
+  padding: 20px;
+}
+
+.hero-container {
+  max-width: 1080px;
+  margin: auto;
+}
+
+.hero .icon {
+  transition: fill 0.2s ease-in-out, stroke 0.2s ease-in-out, stroke-width 0.2s ease-in-out;
+}
+
+.hero .icon-mgda {
+  stroke: none;
+  stroke-width: 0;
+  fill: #fff;
+}
+
+.hero .icon-mgda:hover {
+  stroke-width: 2px;
+  stroke: #1c1c1c;
+  fill: none;
+}
+
+.hero-images {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.hero-images-social {
+  margin-left: auto;
+}
+
+.hero-images-social .icon {
+  fill: #fff;
+  width: 30px;
+  height: auto;
+  margin-left: 15px;
+}
+
+.hero-images-social .icon:hover {
+  fill: #1c1c1c;
+}
+
+.hero-links {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hero-link {
+  font-size: 20px;
+  margin-right: 15px;
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.2s ease-in-out, border 0.2s ease-in-out;
+  border-bottom: solid 1px transparent;
+}
+
+.hero-link:hover {
+  color: #1c1c1c;
+  border-color: #1c1c1c;
 }
