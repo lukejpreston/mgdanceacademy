@@ -2,10 +2,10 @@ import React from 'react'
 import Hero from './hero'
 import Head from './head'
 
-const Component = ({head}) => {
+const Component = ({app}) => {
   return <div>
     <Hero />
-    <Head {...head} />
+    <Head {...app.head} />
   </div>
 }
 

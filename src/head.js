@@ -12,7 +12,7 @@ const icons = {
   policies: PoliciesIcon
 }
 
-const Item = ({side, icon, title, message, link}) => <div className={`row is-${side}`}>
+const Item = ({side, icon, title, message, link, visible, inRoute}) => <div className={`row is-${side} is-${visible ? 'visible' : 'hidden'} is-${inRoute ? 'in-route' : 'out-of-route'}`}>
   {side === 'left' ? <div className='left'>
     {icons[icon]()}
   </div> : null}
