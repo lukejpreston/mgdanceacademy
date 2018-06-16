@@ -1,9 +1,11 @@
 import React from 'react'
 import Hero from './hero'
+import Head from './head'
 
-const Component = (props) => {
+const Component = ({head}) => {
   return <div>
     <Hero />
+    <Head {...head} />
   </div>
 }
 

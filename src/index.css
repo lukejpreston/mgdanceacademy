@@ -31,6 +31,7 @@ body {
 .hero {
   background-color: #9E29A8;
   padding: 20px;
+  margin-bottom: 60px;
 }
 
 .hero-container {
@@ -50,7 +51,7 @@ body {
 
 .hero .icon-mgda:hover {
   stroke-width: 2px;
-  stroke: #1c1c1c;
+  stroke: #272727;
   fill: none;
 }
 
@@ -72,7 +73,7 @@ body {
 }
 
 .hero-images-social .icon:hover {
-  fill: #1c1c1c;
+  fill: #272727;
 }
 
 .hero-links {
@@ -90,6 +91,101 @@ body {
 }
 
 .hero-link:hover {
-  color: #1c1c1c;
-  border-color: #1c1c1c;
+  color: #272727;
+  border-color: #272727;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  max-width: 1080px;
+  padding: 5px;
+  margin-bottom: 80px;
+}
+
+.row.is-left .right {
+  display: none;
+}
+
+.row.is-right .left {
+  display: none;
+}
+
+.row .left {
+  margin-right: 20px;
+}
+
+.row .icon {
+  width: 100px;
+  height: auto;
+  transform: translateY(5px);
+}
+
+@media(max-width: 622px) {
+  .row .left {
+    margin-right: 15px;
+  }
+
+  .row .icon {
+    transform: translateY(10px);
+  }
+}
+
+.row .title,
+.row .message {
+  color: #272727;
+}
+
+.row .title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.row .message {
+  font-size: 18px;
+}
+
+.row .link {
+  font-size: 18px;
+  text-decoration: none;
+  border-bottom: solid 1px transparent;
+  transition: color 0.2s ease-in-out, border 0.2s ease-in-out;
+  width: auto;
+  color: #6AA0E8;
+}
+
+.row .link:hover {
+  border-color: #272727;
+  color: #2565BA;
+}
+
+.row.is-left .title-container {
+  transform: translate(-20px, -20px);
+}
+
+.row.is-left .link-container {
+  transform: translate(-20px, 20px);
+}
+
+.row.is-right .middle {
+  margin-left: auto;
+  margin-right: 30px;
+}
+
+.row.is-right .title-container,
+.row.is-right .message-container,
+.row.is-right .link-container {
+  text-align: right;
+}
+
+.row.is-right .title-container {
+  transform: translate(20px, -20px);
+}
+
+.row.is-right .link-container {
+  transform: translate(20px, 20px);
+}
+
+.row.is-right .icon {
+  margin-right: 5px;
 }
