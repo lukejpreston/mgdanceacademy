@@ -1,3 +1,12 @@
 export default (dispatch, {history}) => {
-  return {}
+  return {
+    headActions: {
+      mount (payload) {
+        dispatch({
+          type: '@@app/mount-head',
+          payload
+        })
+      }
+    }
+  }
 }

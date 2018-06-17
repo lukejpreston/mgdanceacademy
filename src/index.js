@@ -5,21 +5,21 @@ import {ConnectedRouter, routerReducer, routerMiddleware} from 'react-router-red
 import createHistory from 'history/createBrowserHistory'
 import {createStore, combineReducers, applyMiddleware} from 'redux'
 import {Provider, connect} from 'react-redux'
-import clone from 'clone'
 
 import registerServiceWorker from './registerServiceWorker'
 import App from './app'
-import reducer from './reducer'
 import actions from './actions'
+import mapper from './mapper'
+import appReducer from './reducer'
 import './index.css'
 
-const Container = connect(reducer, actions)(App)
+const Container = connect(mapper, actions)(App)
 
 const history = createHistory()
 const middleware = routerMiddleware(history)
 const store = createStore(
   combineReducers({
-    app: (state = {}) => clone(state),
+    app: appReducer,
     router: routerReducer
   }),
   applyMiddleware(middleware)
