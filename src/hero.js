@@ -17,7 +17,7 @@ const Hero = () => <div className='hero'>
       </div>
     </div>
     <div className='hero-links'>
-      <Link className='hero-link' to='/classes'>Classes</Link>
+      <Link className='hero-link' to='/classes/monday'>Classes</Link>
       <Link className='hero-link' to='/events'>Events</Link>
       <Link className='hero-link' to='/contact'>Contact</Link>
       <Link className='hero-link' to='/policies'>Policies</Link>

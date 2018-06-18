@@ -33,3 +33,15 @@ body {
   margin-bottom: 50px;
   font-family: 'Poppins', sans-serif;
 }
+
+.body-block {
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.body-block.is-active {
+  opacity: 1;
+  height: auto;
+}

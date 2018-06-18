@@ -25,6 +25,8 @@ export default (state) => {
     } else item.className = 'is-hidden'
   })
 
+  state.app.classes.active = route === 'classes' ? 'is-active' : 'is-inactive'
+
   state.app.classes.timeline.forEach(timeline => {
     timeline.active = 'is-inactive'
     if (pathname.includes(timeline.name)) timeline.active = 'is-active'

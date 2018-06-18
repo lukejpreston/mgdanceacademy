@@ -38,8 +38,8 @@ const Day = ({last, title, subtitle, active, label, contents, name, locationHref
   </div>
 }
 
-const Timeline = ({timeline}) => {
-  return <div className='timeline'>
+const Timeline = ({active, timeline}) => {
+  return <div className={`body-block ${active} timeline`}>
     {timeline.map((day, index) => <Day {...day} key={day.name} last={timeline.length - 1 === index} />)}
   </div>
 }
