@@ -4,6 +4,7 @@ import ClassesIcon from './classes-icon'
 import EventsIcon from './events-icon'
 import ContactIcon from './contact-icon'
 import PoliciesIcon from './policies-icon'
+import './head.css'
 
 const icons = {
   classes: ClassesIcon,

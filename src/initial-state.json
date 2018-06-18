@@ -7,7 +7,7 @@
       "message": "Don't be late for our Acro, Ballet, Tap and Modern classes.",
       "link": {
         "label": "Join a class",
-        "to": "/classes"
+        "to": "/classes/monday"
       }
     }, {
       "icon": "events",
@@ -35,6 +35,120 @@
       "link": {
         "label": "Read our policies",
         "to": "/policies"
+      }
+    }]
+  },
+  "classes": {
+    "timeline": [{
+      "name": "monday",
+      "label": "M",
+      "title": "Kendal",
+      "contents": {
+        "title": "Monday",
+        "address": "Hallgarth Cir\nKendal\nLA9 5NU",
+        "location": "Hallgarth Community Centre",
+        "locationHref": "https://www.google.co.uk/maps/place/Hallgarth+Community+Centre/@54.3391203,-2.7594475,17z/data=!3m1!4b1!4m5!3m4!1s0x487c8d92c1afebfd:0x18e5c0c3081cb089!8m2!3d54.3391203!4d-2.7572589?hl=en",
+        "schedule": [{
+          "time": "4pm - 7pm",
+          "name": "Babes"
+        }, {
+          "time": "5pm - 6pm",
+          "name": "Juniors"
+        }, {
+          "time": "6pm - 7pm",
+          "name": "Acro"
+        }, {
+          "time": "7pm - 8pm",
+          "name": "Inters"
+        }]
+      }
+    }, {
+      "name": "tuesday",
+      "label": "T",
+      "title": "Keswick",
+      "subtitle": "Acro",
+      "contents": {
+        "title": "Tuesday",
+        "address": "Hallgarth Cir\nKendal\nLA9 5NU",
+        "locationHref": "https://www.google.co.uk/maps/place/Keswick+Methodist+Church/@54.6004929,-3.1365746,17z/data=!3m1!4b1!4m5!3m4!1s0x487cdb62f26fff5f:0x430eeec5c0927387!8m2!3d54.6004898!4d-3.1343806?hl=en&shorturl=1",
+        "location": "Keswick Methodist Church",
+        "schedule": [{
+          "time": "4pm -5pm",
+          "name": "Lilac Class"
+        }, {
+          "time": "5pm -6pm",
+          "name": "Purple Class"
+        }, {
+          "time": "6pm -7pm",
+          "name": "Indigo Class"
+        }, {
+          "time": "7pm -8pm",
+          "name": "Violet Class"
+        }]
+      }
+    }, {
+      "name": "wednesday",
+      "label": "W",
+      "title": "Keswick",
+      "subtitle": "Private & Competition Team",
+      "contents": {
+        "title": "Wednesday",
+        "address": "Hallgarth Cir\nKendal\nLA9 5NU",
+        "locationHref": "https://www.google.co.uk/maps/place/Keswick+Methodist+Church/@54.6004929,-3.1365746,17z/data=!3m1!4b1!4m5!3m4!1s0x487cdb62f26fff5f:0x430eeec5c0927387!8m2!3d54.6004898!4d-3.1343806?hl=en&shorturl=1",
+        "location": "Keswick Methodist Church",
+        "schedule": [{
+          "time": "3:45pm -6pm",
+          "name": "Private Lessons",
+          "open": "is-private"
+        }, {
+          "time": "6pm - 7pm",
+          "name": "Competition rehersal"
+        }, {
+          "time": "7pm -7:30pm",
+          "name": "Private Lessons",
+          "open": "is-private"
+        }]
+      }
+    }, {
+      "name": "thursday",
+      "label": "T",
+      "title": "Ambleside",
+      "subtitle": "Private",
+      "contents": {
+        "title": "Thursday",
+        "address": "The Kelsick Centre\nSt. Marys Lane\nAmbleside\nLA22 9DG",
+        "locationHref": "https://www.google.co.uk/maps/place/Kelsick's+Educational+Foundation/@54.4309724,-2.9631072,19z/data=!4m5!3m4!1s0x487ceaf021d1f11f:0x5a430cf4c6d6fe28!8m2!3d54.4309984!4d-2.962811?hl=en",
+        "location": "The Kelsick Centre",
+        "schedule": [{
+          "time": "4pm - 5:45pm",
+          "name": "Private Lessons",
+          "open": "is-private"
+        }]
+      }
+    }, {
+      "name": "friday",
+      "label": "F",
+      "title": "Keswick",
+      "subtitle": "MFSD",
+      "contents": {
+        "title": "Friday",
+        "address": "The Kelsick Centre\nSt. Marys Lane\nAmbleside\nLA22 9DG",
+        "locationHref": "https://www.google.co.uk/maps/place/Keswick+Methodist+Church/@54.6004929,-3.1365746,17z/data=!3m1!4b1!4m5!3m4!1s0x487cdb62f26fff5f:0x430eeec5c0927387!8m2!3d54.6004898!4d-3.1343806?hl=en&shorturl=1",
+        "location": "Keswick Methodist Church",
+        "schedule": [{
+          "time": "4pm - 5pm",
+          "name": "Babes"
+        }, {
+          "time": "5pm - 6pm",
+          "name": "Juniors"
+        }, {
+          "time": "6pm - 7pm",
+          "name": "Inters"
+        }, {
+          "time": "7pm - 7:30pm",
+          "name": "Private Lessons",
+          "open": "is-private"
+        }]
       }
     }]
   }

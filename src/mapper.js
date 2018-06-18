@@ -1,6 +1,5 @@
-const getRoute = (state) => {
+const getRoute = (pathname) => {
   let route = 'home'
-  const pathname = state.router.location.pathname
   if (pathname.includes('classes')) route = 'classes'
   if (pathname.includes('contact')) route = 'contact'
   if (pathname.includes('events')) route = 'events'
@@ -9,7 +8,8 @@ const getRoute = (state) => {
 }
 
 export default (state) => {
-  const route = getRoute(state)
+  const pathname = state.router.location.pathname
+  const route = getRoute(pathname)
 
   if (route === 'home') {
     state.app.head.dimensions = state.app.head.dimensions || {}
@@ -23,6 +23,11 @@ export default (state) => {
       item.className = 'is-title'
       state.app.head.currentHeight = item.dimensions.height
     } else item.className = 'is-hidden'
+  })
+
+  state.app.classes.timeline.forEach(timeline => {
+    timeline.active = 'is-inactive'
+    if (pathname.includes(timeline.name)) timeline.active = 'is-active'
   })
 
   return state

@@ -1,0 +1,140 @@
+.head {
+    overflow: hidden;
+    max-width: 1080px;
+    margin: auto;
+    position: relative;
+    transition: height 0.3s ease-in-out;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    margin-bottom: 80px;
+    opacity: 1;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.row.is-left .right {
+    display: none;
+}
+
+.row.is-right .left {
+    display: none;
+}
+
+.row .left {
+    margin-right: 20px;
+}
+
+.row .icon {
+    width: 100px;
+    height: auto;
+    transform: translateY(5px);
+}
+
+@media(max-width: 622px) {
+    .row .left {
+        margin-right: 15px;
+    }
+    .row .icon {
+        transform: translateY(10px);
+    }
+}
+
+.row .title,
+.row .message {
+    color: #272727;
+}
+
+.row .title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.row .message {
+    font-size: 18px;
+}
+
+.row .link {
+    font-size: 18px;
+    text-decoration: none;
+    border-bottom: solid 1px transparent;
+    transition: color 0.2s ease-in-out, border 0.2s ease-in-out;
+    width: auto;
+    color: #6AA0E8;
+}
+
+.row .link:hover {
+    border-color: #2565BA;
+    color: #2565BA;
+}
+
+.message-container,
+.link-container {
+    opacity: 1;
+    overflow: hidden;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.title-container {
+    transition: transform 0.3s ease-in-out;
+}
+
+.row.is-left .title-container {
+    transform: translate(-20px, -20px);
+}
+
+.row.is-left .link-container {
+    transform: translate(-20px, 20px);
+}
+
+.row.is-right .middle {
+    margin-left: auto;
+    margin-right: 30px;
+}
+
+.row.is-right .title-container,
+.row.is-right .message-container,
+.row.is-right .link-container {
+    text-align: right;
+}
+
+.row.is-right .title-container {
+    transform: translate(20px, -20px);
+}
+
+.row.is-right .link-container {
+    transform: translate(20px, 20px);
+}
+
+.row.is-right .icon {
+    margin-right: 5px;
+}
+
+.row.is-left .icon {
+    margin-left: 5px;
+}
+
+.row.is-title .message-container,
+.row.is-title .link-container {
+    opacity: 0;
+}
+
+.row.is-title .title-container {
+    transform: translate(0, 25px);
+}
+
+.row.is-hidden {
+    opacity: 0;
+}
+
+.row.is-hidden .title-container {
+    transform: translate(0, 25px);
+    opacity: 0;
+}
+
+.row.is-hidden .message-container,
+.row.is-hidden .link-container {
+    opacity: 0;
+}
