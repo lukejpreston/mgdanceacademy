@@ -151,5 +151,60 @@
         }]
       }
     }]
+  },
+  "events": {
+    "timeline": [{
+      "month": "July",
+      "name": "medals-07-21",
+      "date": "2018-07-21",
+      "label": "21",
+      "title": "Medals and Exams",
+      "subtitle": "Studio Nine",
+      "contents": {
+        "title": "Saturday, 21st July",
+        "tbc": "is-tbc",
+        "address": "Studio Nine",
+        "locationHref": "Studio Nine",
+        "location": "Studio Nine",
+        "name": "Medals and Exams",
+        "description": "Medals and Exams",
+        "event": "Medals and Exams",
+        "eventHref": "Medals and Exams"
+      }
+    }, {
+      "month": "July",
+      "name": "summer-school-2018",
+      "date": "2018-07-23",
+      "label": "23",
+      "title": "(MFSD) Summer School",
+      "subtitle": "Studio Nine",
+      "contents": {
+        "title": "Saturday, 23rd - 27th July",
+        "address": "Studio Nine",
+        "locationHref": "Studio Nine",
+        "location": "Studio Nine",
+        "name": "Summer School",
+        "description": "Summer School",
+        "event": "Summer School",
+        "eventHref": "Summer School"
+      }
+    }, {
+      "month": "August",
+      "name": "summer-acro-intensive-2018",
+      "date": "2018-08-28",
+      "label": "28",
+      "title": "Summer Acro Intensive",
+      "subtitle": "Keswick",
+      "contents": {
+        "title": "Tuesday, 28th - 30th August",
+        "address": "Keswick",
+        "locationHref": "Keswick",
+        "location": "Keswick",
+        "name": "Summer Acro Intensive",
+        "description": "Summer Acro Intensive",
+        "event": "Summer Acro Intensive",
+        "eventHref": "Summer Acro Intensive"
+      }
+    }]
   }
 }

@@ -16,9 +16,9 @@ const Schedule = ({rows}) => <div className='day-contents-schedule'>
   {rows.map((row, index) => <ScheduleRow key={`schedule-row-${index}`} {...row} />)}
 </div>
 
-const Day = ({last, title, subtitle, active, label, contents, name}) => {
+const Day = ({route, last, title, subtitle, active, label, contents, name}) => {
   return <div className={`day ${active}`}>
-    <Link to={`/classes/${name}`}>
+    <Link to={`/${route}/${name}`}>
       <div className='day-date'>
         <span className='day-date-label'>{label}</span>
       </div>
@@ -38,9 +38,9 @@ const Day = ({last, title, subtitle, active, label, contents, name}) => {
   </div>
 }
 
-const Timeline = ({active, timeline}) => {
+const Timeline = ({route, active, timeline}) => {
   return <div className={`body-block ${active} timeline`}>
-    {timeline.map((day, index) => <Day {...day} key={day.name} last={timeline.length - 1 === index} />)}
+    {timeline.map((day, index) => <Day {...day} route={route} key={day.name} last={timeline.length - 1 === index} />)}
   </div>
 }
 export default Timeline

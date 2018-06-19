@@ -39,6 +39,7 @@ body {
   height: 0;
   overflow: hidden;
   transition: opacity 0.2s ease-in-out;
+  margin: 0;
 }
 
 .body-block.is-active {

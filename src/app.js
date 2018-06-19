@@ -3,12 +3,13 @@ import Hero from './hero'
 import Head from './head'
 import Timeline from './timeline'
 
-const Component = ({app, headActions, classesActions}) => {
+const Component = ({app, headActions, classesActions, eventsActions}) => {
   return <div>
-    <Hero />
+    <Hero links={app.hero.links} />
     <Head {...app.head} {...headActions} />
     <div className='body'>
-      <Timeline {...app.classes} {...classesActions} />
+      <Timeline route='classes' {...app.classes} {...classesActions} />
+      <Timeline route='events' {...app.events} {...eventsActions} />
     </div>
   </div>
 }
