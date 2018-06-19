@@ -16,7 +16,7 @@ const Schedule = ({rows}) => <div className='day-contents-schedule'>
   {rows.map((row, index) => <ScheduleRow key={`schedule-row-${index}`} {...row} />)}
 </div>
 
-const Day = ({last, title, subtitle, active, label, contents, name, locationHref}) => {
+const Day = ({last, title, subtitle, active, label, contents, name}) => {
   return <div className={`day ${active}`}>
     <Link to={`/classes/${name}`}>
       <div className='day-date'>
@@ -27,7 +27,7 @@ const Day = ({last, title, subtitle, active, label, contents, name, locationHref
     <div className='day-contents'>
       <div className='day-contents-expanded'>
         <div className='day-contents-title'>{contents.title}</div>
-        { contents.address ? <Address address={contents.address} location={contents.location} locationHref={locationHref} /> : null }
+        { contents.address ? <Address {...contents} /> : null }
         { contents.schedule ? <Schedule rows={contents.schedule} /> : null }
       </div>
       <div className='day-contents-collapsed'>
