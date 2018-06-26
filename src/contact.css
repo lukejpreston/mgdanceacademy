@@ -1,0 +1,117 @@
+.body-block.is-active.contact {
+    margin: auto;
+    margin-top: 50px;
+    max-width: 780px;
+    width: 100%;
+}
+
+.control {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.control-label {
+    z-index: 1;
+    position: absolute;
+    pointer-events: none;
+    top: 10px;
+    font-size: 22px;
+    transition: font-size 0.2s ease-in-out, top 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.control.is-text.is-filled .control-label,
+.control.is-text.is-active .control-label {
+    top: -15px;
+    font-size: 16px;
+}
+
+.control.is-active .control-label {
+    color: blue;
+}
+
+.control .control-input {
+    border: none;
+    outline: none;
+    font-size: 22px;
+    width: 100%;
+    padding: 10px 0;
+    transition: border 0.2s ease-in-out;
+}
+
+
+.control.is-text .control-input {
+    border-bottom: solid 1px #4a4a4a;
+}
+
+.control.is-text .control.is-active .control-input {
+    border-bottom: solid 1px blue;
+}
+
+.control.is-textarea {
+    border: solid 1px #4a4a4a;
+    border-radius: 3px;
+}
+
+.control.control.is-textarea.is-active {
+    border-color: blue;
+}
+
+.control.is-textarea .control-label {
+    position: relative;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.control.is-textarea {
+    padding: 10px;
+}
+
+.control.is-textarea .control-input {
+    min-height: 200px;
+    position: relative;
+    margin: auto;
+    margin-top: 10px;
+    border: none;
+}
+
+.control-buttons {
+    display: flex;
+}
+
+.control-button {
+    font-size: 22px;
+    padding: 20px 10px;
+    background-color: none;
+    border: 1px transparent;
+    width: 25%;
+    margin-right: 20px;
+    border-radius: 3px;
+    outline: none;
+    transition: background-color 0.2s ease-in-out;
+    
+}
+
+.control-button:hover {
+    cursor: pointer;
+}
+
+.control-button.is-send {
+    background-color: #F8BEEC;
+    color: #fff;
+}
+
+.control-button.is-send:hover,
+.control-button.is-send:active,
+.control-button.is-send:focus {
+    background-color: #E573C5;
+}
+
+.control-button.is-reset {
+    background-color: #fff;
+}
+
+.control-button.is-reset:hover,
+.control-button.is-reset:active,
+.control-button.is-reset:focus {
+    background-color: #f0f0f0;
+}

@@ -61,5 +61,7 @@ export default (state) => {
     if (pathname.includes(timeline.name)) timeline.active = 'is-active'
   })
 
+  state.app.contact.active = route === 'contact' ? 'is-active' : 'is-inactive'
+
   return state
 }
