@@ -5,9 +5,9 @@
     width: 100%;
 }
 
-.control {
+.control-container {
     position: relative;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 }
 
 .control-label {
@@ -114,4 +114,15 @@
 .control-button.is-reset:active,
 .control-button.is-reset:focus {
     background-color: #f0f0f0;
+}
+
+.control-message {
+    display: block;
+    font-size: 18px;
+    margin-top: 10px;
+    transition: color 0.2s ease-in-out;
+}
+
+.control.is-invalid .control-message {
+    color: red;
 }
