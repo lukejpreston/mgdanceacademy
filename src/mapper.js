@@ -62,6 +62,7 @@ export default (state) => {
   })
 
   state.app.contact.active = route === 'contact' ? 'is-active' : 'is-inactive'
+  state.app.policies.active = route === 'policies' ? 'is-active' : 'is-inactive'
 
   return state
 }

@@ -207,5 +207,14 @@
       }
     }]
   },
-  "contact": {}
+  "contact": {},
+  "policies": {
+    "items": [{
+      "title": "Policy 1",
+      "link": "/blah.pdf"
+    }, {
+      "title": "Policy 2",
+      "link": "/blah.pdf"
+    }]
+  }
 }

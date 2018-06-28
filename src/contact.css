@@ -123,6 +123,7 @@
     transition: color 0.2s ease-in-out;
 }
 
+.control-container.is-invalid .control-message,
 .control.is-invalid .control-message {
     color: red;
 }
