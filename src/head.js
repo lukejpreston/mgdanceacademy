@@ -29,13 +29,13 @@ class Item extends Component {
     })
   }
   componentDidUpdate () {
+    const top = this.props.dimensions.top - this.props.headDimensions.top
     if (this.props.className === 'is-title') {
-      const top = this.props.dimensions.top - this.props.headDimensions.top
       this.rowRef.current.style.transform = `translate(0, -${top}px)`
     } else if (this.props.className === 'is-hidden' && this.props.side === 'left') {
-      this.rowRef.current.style.transform = `translateX(-100%)`
+      this.rowRef.current.style.transform = `translate(-100%, -${top}px)`
     } else if (this.props.className === 'is-hidden') {
-      this.rowRef.current.style.transform = `translateX(100%)`
+      this.rowRef.current.style.transform = `translate(100%, -${top}px)`
     } else {
       this.rowRef.current.style.transform = `initial`
     }
