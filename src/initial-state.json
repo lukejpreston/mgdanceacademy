@@ -211,9 +211,11 @@
   "policies": {
     "items": [{
       "title": "Policy 1",
+      "message": "A short description",
       "link": "/blah.pdf"
     }, {
       "title": "Policy 2",
+      "message": "A short description",
       "link": "/blah.pdf"
     }]
   }

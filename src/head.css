@@ -65,7 +65,9 @@
     color: #6AA0E8;
 }
 
-.row .link:hover {
+.row .link:hover,
+.row .link:focus {
+    outline: none;
     border-color: #2565BA;
     color: #2565BA;
 }

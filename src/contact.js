@@ -39,7 +39,7 @@ class ControlText extends Control {
   render () {
     return <div className={`control control-container ${this.state.active} ${this.state.filled} is-text is-${this.props.valid ? 'valid' : 'invalid'}`}>
       <label className='control-label'>{this.props.label}</label>
-      <input ref={this.controlRef} className='control-input' type='text' value={this.props.value} onFocus={() => this.focus()} onBlur={() => this.blur()} onChange={(evt) => this.change(evt.target.value)} onKeyDown={(evt) => { this.keydown(evt) }} />
+      <input disabled={this.props.disabled} ref={this.controlRef} className='control-input' type='text' value={this.props.value} onFocus={() => this.focus()} onBlur={() => this.blur()} onChange={(evt) => this.change(evt.target.value)} onKeyDown={(evt) => { this.keydown(evt) }} />
       <span className='control-message'>{this.props.message}</span>
     </div>
   }
@@ -50,7 +50,7 @@ class ControlTextArea extends Control {
     return <div className={`control-container is-${this.props.valid ? 'valid' : 'invalid'}`}>
       <div className={`control ${this.state.active} ${this.state.filled} is-textarea`}>
         <label className='control-label'>{this.props.label}</label>
-        <textarea ref={this.controlRef} className='control-input' type='text' value={this.props.value} onFocus={() => this.focus()} onBlur={() => this.blur()} onChange={(evt) => this.change(evt.target.value)} />
+        <textarea disabled={this.props.disabled} ref={this.controlRef} className='control-input' type='text' value={this.props.value} onFocus={() => this.focus()} onBlur={() => this.blur()} onChange={(evt) => this.change(evt.target.value)} />
       </div>
       <span className='control-message'>{this.props.message}</span>
     </div>
@@ -178,37 +178,42 @@ class Contact extends Component {
     return <div className={`body-block ${this.props.active} contact`}>
       <h2>Send a Message</h2>
       <ControlText
+        disabled={this.props.disabled}
         label='First Name'
         onChange={value => this.change('firstName', value)}
         onEnter={() => this.submit()}
         {...this.state.firstName}
       />
       <ControlText
+        disabled={this.props.disabled}
         label='Last Name'
         onChange={value => this.change('lastName', value)}
         onEnter={() => this.submit()}
         {...this.state.lastName}
       />
       <ControlText
+        disabled={this.props.disabled}
         label='Email'
         onChange={value => this.change('email', value)}
         onEnter={() => this.submit()}
         {...this.state.email}
       />
       <ControlText
+        disabled={this.props.disabled}
         label='Subject'
         onChange={value => this.change('subject', value)}
         onEnter={() => this.submit()}
         {...this.state.subject}
       />
       <ControlTextArea
+        disabled={this.props.disabled}
         label='Message'
         onChange={value => this.change('message', value)}
         {...this.state.message}
       />
       <div className='control-buttons'>
-        <button className='control-button is-send' onClick={() => this.submit()}>SEND</button>
-        <button className='control-button is-reset' onClick={() => this.reset()}>RESET</button>
+        <button disabled={this.props.disabled} className='control-button is-send' onClick={() => this.submit()}>SEND</button>
+        <button disabled={this.props.disabled} className='control-button is-reset' onClick={() => this.reset()}>RESET</button>
       </div>
     </div>
   }

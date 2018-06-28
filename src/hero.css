@@ -19,7 +19,12 @@
     fill: #fff;
 }
 
-.hero .icon-mgda:hover {
+.hero-images a {
+    outline: none;
+}
+
+.hero .icon-mgda:hover,
+.hero-images a:focus .icon-mgda {
     stroke-width: 2px;
     stroke: #272727;
     fill: none;
@@ -42,7 +47,12 @@
     margin-left: 15px;
 }
 
-.hero-images-social .icon:hover {
+.hero-images-social a:focus {
+    outline: none;
+}
+
+.hero-images-social .icon:hover,
+.hero-images-social a:focus .icon {
     fill: #272727;
 }
 
@@ -60,7 +70,9 @@
     border-bottom: solid 1px transparent;
 }
 
-.hero-link:hover {
+.hero-link:hover,
+.hero-link:focus {
+    outline: none;
     color: #272727;
     border-color: #272727;
 }

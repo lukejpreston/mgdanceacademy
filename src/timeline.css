@@ -1,10 +1,3 @@
-.body-block.is-active.timeline {
-    margin: auto;
-    margin-top: 50px;
-    max-width: 780px;
-    width: 90%;
-}
-
 .day {
     display: flex;
     align-items: baseline;
@@ -27,7 +20,12 @@
     transition: background-color 0.2s ease-in-out;
 }
 
-.day-date:hover {
+.day a:focus {
+    outline: none;
+}
+
+.day-date:hover,
+.day a:focus .day-date {
     background-color: #E573C5;
     cursor: pointer;
 }
@@ -108,7 +106,9 @@
     color: #6AA0E8;
 }
 
-.day-contents-address-link:hover {
+.day-contents-address-link:hover,
+.day-contents-address-link:focus {
+    outline: none;
     border-color: #2565BA;
     color: #2565BA;
 }

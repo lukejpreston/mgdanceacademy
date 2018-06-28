@@ -35,6 +35,7 @@ export default (state) => {
   const pathname = state.router.location.pathname
   const route = getRoute(pathname)
 
+  state.app.head.disabled = route !== 'home'
   if (route === 'home') {
     state.app.head.dimensions = state.app.head.dimensions || {}
     state.app.head.currentHeight = state.app.head.dimensions.height
@@ -51,18 +52,29 @@ export default (state) => {
 
   state.app.classes.active = route === 'classes' ? 'is-active' : 'is-inactive'
   state.app.classes.timeline.forEach(timeline => {
+    timeline.disabled = route !== 'classes'
     timeline.active = 'is-inactive'
-    if (pathname.includes(timeline.name)) timeline.active = 'is-active'
+    timeline.contents.linksDisabled = true
+    if (pathname.includes(timeline.name)) {
+      timeline.active = 'is-active'
+      timeline.contents.linksDisabled = false
+    }
   })
 
   state.app.events.active = route === 'events' ? 'is-active' : 'is-inactive'
   state.app.events.timeline.forEach(timeline => {
+    timeline.disabled = route !== 'events'
     timeline.active = 'is-inactive'
-    if (pathname.includes(timeline.name)) timeline.active = 'is-active'
+    timeline.contents.linksDisabled = true
+    if (pathname.includes(timeline.name)) {
+      timeline.active = 'is-active'
+      timeline.contents.linksDisabled = false
+    }
   })
 
   state.app.contact.active = route === 'contact' ? 'is-active' : 'is-inactive'
+  state.app.contact.disabled = route !== 'contact'
   state.app.policies.active = route === 'policies' ? 'is-active' : 'is-inactive'
-
+  state.app.policies.disabled = route !== 'policies'
   return state
 }

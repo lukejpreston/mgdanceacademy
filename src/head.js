@@ -53,7 +53,7 @@ class Item extends Component {
           <span className='message'>{this.props.message}</span>
         </div>
         <div className='link-container'>
-          <Link className='link' to={this.props.link.to}>{this.props.link.label}</Link>
+          {this.props.disabled ? null : <Link className='link' to={this.props.link.to}>{this.props.link.label}</Link>}
         </div>
       </div>
       {this.props.side === 'right' ? <div className='right'>
@@ -90,7 +90,7 @@ class Head extends Component {
   }
   render () {
     return <div ref={this.headRef} className='head'>
-      {this.props.items.map(item => <Item {...item} key={item.icon} top={this.state.top} mount={this.props.mount} headDimensions={this.props.dimensions} />)}
+      {this.props.items.map(item => <Item {...item} key={item.icon} top={this.state.top} mount={this.props.mount} headDimensions={this.props.dimensions} disabled={this.props.disabled} />)}
     </div>
   }
 }
