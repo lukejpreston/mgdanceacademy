@@ -132,6 +132,10 @@
     transition: opacity 0.2s ease-in-out;
 }
 
+.day-contents-collapsed {
+    margin-top: -10px;
+}
+
 .day-contents-expanded {
     padding-bottom: 10px;
 }
