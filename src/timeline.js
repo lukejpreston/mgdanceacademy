@@ -3,7 +3,6 @@ import {Link} from 'react-router-dom'
 import './timeline.css'
 
 const Address = ({disabled, linksDisabled, address, location, locationHref}) => {
-  console.log(disabled, linksDisabled)
   return <div className='day-contents-address'>
     <p className='day-contents-address-content'>{address}</p>
     {disabled || linksDisabled ? null : <a className='day-contents-address-link' href={locationHref}>{location}</a>}

@@ -120,3 +120,41 @@
 .control.is-invalid .control-message {
     color: red;
 }
+
+.shake-0 {
+    animation: shake-0 0.82s cubic-bezier(.36, .07, .19, .97) both;
+}
+
+@keyframes shake-0 {
+    10%, 90% {
+        transform: translateX(-1px);
+    }
+    20%, 80% {
+        transform: translateX(2px);
+    }
+    30%, 50%, 70% {
+        transform: translateX(-4px);
+    }
+    40%, 60% {
+        transform: translateX(4px);
+    }
+}
+
+.shake-1 {
+    animation: shake-1 0.82s cubic-bezier(.36, .07, .19, .97) both;
+}
+
+@keyframes shake-1 {
+    10%, 90% {
+        transform: translateX(-1px);
+    }
+    20%, 80% {
+        transform: translateX(2px);
+    }
+    30%, 50%, 70% {
+        transform: translateX(-4px);
+    }
+    40%, 60% {
+        transform: translateX(4px);
+    }
+}

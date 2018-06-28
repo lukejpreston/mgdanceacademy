@@ -46,7 +46,7 @@ button {
   margin: auto;
   margin-top: 50px;
   max-width: 780px;
-  width: 90%;
+  padding: 0 5%;
 }
 
 .body-block.is-active {

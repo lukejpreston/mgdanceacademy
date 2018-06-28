@@ -6,7 +6,9 @@ class Control extends Component {
     super(props)
     this.state = {
       active: 'is-inactive',
-      filled: 'is-unfilled'
+      filled: 'is-unfilled',
+      shakeCount: 0,
+      shake: 'noshake'
     }
     this.controlRef = createRef()
   }
@@ -29,8 +31,14 @@ class Control extends Component {
   }
   componentWillReceiveProps (props) {
     if (props.focus) this.controlRef.current.focus()
+
+    let shakeCount = this.state.shakeCount
+    if (this.props.message !== props.message) shakeCount = (this.state.shakeCount + 1) % 2
+
     this.setState({
-      filled: props.value === '' ? 'is-unfilled' : 'is-filled'
+      filled: props.value === '' ? 'is-unfilled' : 'is-filled',
+      shakeCount,
+      shake: props.valid ? 'noshake' : 'shake'
     })
   }
 }
@@ -40,7 +48,7 @@ class ControlText extends Control {
     return <div className={`control control-container ${this.state.active} ${this.state.filled} is-text is-${this.props.valid ? 'valid' : 'invalid'}`}>
       <label className='control-label'>{this.props.label}</label>
       <input disabled={this.props.disabled} ref={this.controlRef} className='control-input' type='text' value={this.props.value} onFocus={() => this.focus()} onBlur={() => this.blur()} onChange={(evt) => this.change(evt.target.value)} onKeyDown={(evt) => { this.keydown(evt) }} />
-      <span className='control-message'>{this.props.message}</span>
+      <span className={`control-message ${this.state.shake}-${this.state.shakeCount}`}>{this.props.message}</span>
     </div>
   }
 }
