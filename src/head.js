@@ -30,15 +30,13 @@ class Item extends Component {
   }
   componentDidUpdate () {
     const top = this.props.dimensions.top - this.props.headDimensions.top
-    if (this.props.className === 'is-title') {
-      this.rowRef.current.style.transform = `translate(0, -${top}px)`
-    } else if (this.props.className === 'is-hidden' && this.props.side === 'left') {
-      this.rowRef.current.style.transform = `translate(-100%, -${top}px)`
-    } else if (this.props.className === 'is-hidden') {
-      this.rowRef.current.style.transform = `translate(100%, -${top}px)`
-    } else {
-      this.rowRef.current.style.transform = `initial`
-    }
+    let transform = 'initial'
+    if (this.props.className === 'is-title') transform = `translate(0, -${top}px)`
+    else if (this.props.className === 'is-hidden' && this.props.side === 'left') transform = `translate(-100%, -${top}px)`
+    else if (this.props.className === 'is-hidden') transform = `translate(100%, -${top}px)`
+    else transform = `initial`
+
+    this.rowRef.current.style.transform = transform
   }
   render () {
     return <div ref={this.rowRef} className={`row is-${this.props.side} ${this.props.className}`}>
