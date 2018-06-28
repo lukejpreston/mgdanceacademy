@@ -75,31 +75,31 @@ class Contact extends Component {
         value: '',
         valid: true,
         focus: false,
-        message: '*Required'
+        message: ''
       },
       lastName: {
         value: '',
         valid: true,
         focus: false,
-        message: '*Required'
+        message: ''
       },
       email: {
         value: '',
         valid: true,
         focus: false,
-        message: '*Required'
+        message: ''
       },
       subject: {
         value: '',
         valid: true,
         focus: false,
-        message: '*Required'
+        message: ''
       },
       message: {
         value: '',
         valid: true,
         focus: false,
-        message: '*Required'
+        message: ''
       }
     }
   }
@@ -120,7 +120,7 @@ class Contact extends Component {
       field.message = `${name} is required`
     } else {
       field.valid = true
-      field.message = '*Required'
+      field.message = ''
     }
     return field
   }
@@ -156,31 +156,31 @@ class Contact extends Component {
         value: '',
         valid: true,
         focus: false,
-        message: '*Required'
+        message: ''
       },
       lastName: {
         value: '',
         valid: true,
         focus: false,
-        message: '*Required'
+        message: ''
       },
       email: {
         value: '',
         valid: true,
         focus: false,
-        message: '*Required'
+        message: ''
       },
       subject: {
         value: '',
         valid: true,
         focus: false,
-        message: '*Required'
+        message: ''
       },
       message: {
         value: '',
         valid: true,
         focus: false,
-        message: '*Required'
+        message: ''
       }
     })
   }
@@ -225,6 +225,13 @@ class Contact extends Component {
         <button disabled={this.props.disabled} className='control-button is-send' onClick={() => this.submit()}>SEND</button>
         <button disabled={this.props.disabled} className='control-button is-reset' onClick={() => this.reset()}>RESET</button>
       </div>
+      <p className='contact-warning'>
+        {`Please do not send any sensitive information such as passwords or credit card details.
+
+We may hold onto any information from this correspondence for future reference unless requested for it's removal.
+
+All correspondance kept, will be removed when it is longer required.`}
+      </p>
     </div>
   }
 }

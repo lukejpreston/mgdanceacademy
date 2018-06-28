@@ -158,3 +158,11 @@
         transform: translateX(4px);
     }
 }
+
+.contact-warning {
+    margin-top: 20px;
+    white-space: pre-line;
+    font-size: 18px;
+    color: #4a4a4a;
+    line-height: 1.2;
+}
