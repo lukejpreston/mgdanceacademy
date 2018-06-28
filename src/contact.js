@@ -1,6 +1,8 @@
 import React, {Component, createRef} from 'react'
 import './contact.css'
 
+const emailRegex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/g
+
 class Control extends Component {
   constructor (props) {
     super(props)
@@ -125,7 +127,7 @@ class Contact extends Component {
   validateEmail () {
     const email = this.validate('email')
     const value = email.value
-    if (value !== '' && value.match(/^.+@{1}.+$/g) === null) {
+    if (value !== '' && value.match(emailRegex) === null) {
       email.valid = false
       email.message = `${value} is not a valid email`
     }
