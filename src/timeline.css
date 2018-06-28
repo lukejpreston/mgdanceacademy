@@ -102,7 +102,7 @@
     text-decoration: none;
     transition: color 0.2s ease-in-out, border 0.2s ease-in-out;
     border-bottom: solid 1px transparent;
-    
+    padding-bottom: 5px;
     color: #6AA0E8;
 }
 
@@ -130,6 +130,10 @@
 .day-contents-expanded {
     overflow: hidden;
     transition: opacity 0.2s ease-in-out;
+}
+
+.day-contents-expanded {
+    padding-bottom: 10px;
 }
 
 .day.is-active .day-contents-collapsed,

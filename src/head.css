@@ -63,6 +63,7 @@
     transition: color 0.2s ease-in-out, border 0.2s ease-in-out;
     width: auto;
     color: #6AA0E8;
+    padding-bottom: 5px;
 }
 
 .row .link:hover,

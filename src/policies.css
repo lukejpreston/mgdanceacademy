@@ -1,0 +1,49 @@
+.policy {
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.policy-image {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+}
+
+.policy-info {
+    flex-grow: 1;
+}
+
+.policy-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.policy-message {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.policy-link {
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out, border 0.2s ease-in-out;
+    border-bottom: solid 1px transparent;
+    color: #6AA0E8;
+    padding-bottom: 5px;
+}
+
+.policy-link:hover,
+.policy-link:focus {
+    outline: none;
+    border-color: #2565BA;
+    color: #2565BA;
+}
+
+.content-item {
+    margin-bottom: 10px;
+}
+
+.content-item:last-child {
+    margin-bottom: 0;
+}
