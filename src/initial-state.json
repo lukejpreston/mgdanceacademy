@@ -49,17 +49,18 @@
         "location": "Hallgarth Community Centre",
         "locationHref": "https://www.google.co.uk/maps/place/Hallgarth+Community+Centre/@54.3391203,-2.7594475,17z/data=!3m1!4b1!4m5!3m4!1s0x487c8d92c1afebfd:0x18e5c0c3081cb089!8m2!3d54.3391203!4d-2.7572589?hl=en",
         "schedule": [{
-          "time": "4pm - 7pm",
+          "time": "4pm - 5pm",
           "name": "Babes"
         }, {
           "time": "5pm - 6pm",
-          "name": "Juniors"
+          "name": "Juniors/Inters"
         }, {
           "time": "6pm - 7pm",
           "name": "Acro"
         }, {
           "time": "7pm - 8pm",
-          "name": "Inters"
+          "name": "Private Lessons",
+          "open": "is-private"
         }]
       }
     }, {
@@ -69,21 +70,21 @@
       "subtitle": "Acro",
       "contents": {
         "title": "Tuesday",
-        "address": "Hallgarth Cir\nKendal\nLA9 5NU",
+        "address": "6 Southey St\nKeswick\nCA12 4EF",
         "locationHref": "https://www.google.co.uk/maps/place/Keswick+Methodist+Church/@54.6004929,-3.1365746,17z/data=!3m1!4b1!4m5!3m4!1s0x487cdb62f26fff5f:0x430eeec5c0927387!8m2!3d54.6004898!4d-3.1343806?hl=en&shorturl=1",
         "location": "Keswick Methodist Church",
         "schedule": [{
-          "time": "4pm -5pm",
-          "name": "Lilac Class"
-        }, {
-          "time": "5pm -6pm",
+          "time": "4pm - 5pm",
           "name": "Purple Class"
         }, {
-          "time": "6pm -7pm",
+          "time": "5pm - 6pm",
           "name": "Indigo Class"
         }, {
-          "time": "7pm -8pm",
+          "time": "6pm - 7pm",
           "name": "Violet Class"
+        }, {
+          "time": "7pm - 8pm",
+          "name": "Lavender Class"
         }]
       }
     }, {
@@ -93,18 +94,18 @@
       "subtitle": "Private & Competition Team",
       "contents": {
         "title": "Wednesday",
-        "address": "Hallgarth Cir\nKendal\nLA9 5NU",
+        "address": "6 Southey St\nKeswick\nCA12 4EF",
         "locationHref": "https://www.google.co.uk/maps/place/Keswick+Methodist+Church/@54.6004929,-3.1365746,17z/data=!3m1!4b1!4m5!3m4!1s0x487cdb62f26fff5f:0x430eeec5c0927387!8m2!3d54.6004898!4d-3.1343806?hl=en&shorturl=1",
         "location": "Keswick Methodist Church",
         "schedule": [{
-          "time": "3:45pm -6pm",
+          "time": "3:45pm - 6pm",
           "name": "Private Lessons",
           "open": "is-private"
         }, {
           "time": "6pm - 7pm",
-          "name": "Competition rehersal"
+          "name": "Performance Team"
         }, {
-          "time": "7pm -7:30pm",
+          "time": "7pm - 8pm",
           "name": "Private Lessons",
           "open": "is-private"
         }]
@@ -132,7 +133,7 @@
       "subtitle": "MFSD",
       "contents": {
         "title": "Friday",
-        "address": "The Kelsick Centre\nSt. Marys Lane\nAmbleside\nLA22 9DG",
+        "address": "6 Southey St\nKeswick\nCA12 4EF",
         "locationHref": "https://www.google.co.uk/maps/place/Keswick+Methodist+Church/@54.6004929,-3.1365746,17z/data=!3m1!4b1!4m5!3m4!1s0x487cdb62f26fff5f:0x430eeec5c0927387!8m2!3d54.6004898!4d-3.1343806?hl=en&shorturl=1",
         "location": "Keswick Methodist Church",
         "schedule": [{
@@ -145,9 +146,8 @@
           "time": "6pm - 7pm",
           "name": "Inters"
         }, {
-          "time": "7pm - 7:30pm",
-          "name": "Private Lessons",
-          "open": "is-private"
+          "time": "7pm - 8pm",
+          "name": "Seniors"
         }]
       }
     }]
@@ -210,13 +210,17 @@
   "contact": {},
   "policies": {
     "items": [{
-      "title": "Policy 1",
-      "message": "A short description",
-      "link": "/blah.pdf"
+      "title": "MGDA child protection policy",
+      "link": "/MGDA child protection policy.pdf"
     }, {
-      "title": "Policy 2",
-      "message": "A short description",
-      "link": "/blah.pdf"
+      "title": "MGDA GDPR policy",
+      "link": "/MGDA GDPR policy.pdf"
+    }, {
+      "title": "MGDA Health and Safety Policy",
+      "link": "/MGDA Health and Safety Policy.pdf"
+    }, {
+      "title": "Terms and conditions",
+      "link": "/Terms and conditions.pdf"
     }]
   }
 }
