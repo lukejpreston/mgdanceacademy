@@ -1,8 +1,9 @@
 import React from 'react'
 import './policies.css'
+import Icon from './pdf-icon'
 
 const Policy = ({title, message, link, disabled}) => <div className='policy'>
-  <img alt='pdf' src='/pdf.png' className='policy-image' />
+  <Icon className='policy-image' />
   <div className='policy-info'>
     <div className='content-item'>
       <span className='policy-title'>{title}</span>
