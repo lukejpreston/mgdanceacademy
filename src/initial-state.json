@@ -150,6 +150,24 @@
           "name": "Seniors"
         }]
       }
+    }, {
+      "name": "saturday",
+      "label": "S",
+      "title": "Cockermouth",
+      "subtitle": "MFSD - Troupe Rehersals",
+      "contents": {
+        "title": "Saturday",
+        "address": "6 Southey St\nKeswick\nCA12 4EF",
+        "locationHref": "https://www.google.co.uk/maps/place/Cockermouth+After+School+Scheme/@54.6641707,-3.3584834,17z/data=!4m8!1m2!2m1!1scockermouth+scout+hut!3m4!1s0x487cd6a650438e43:0x98c5bc2cdf298a04!8m2!3d54.66442!4d-3.356206",
+        "location": "The Scout Centre, Cockermouth",
+        "schedule": [{
+          "time": "12:45pm - 1:45pm",
+          "name": "Juniors"
+        }, {
+          "time": "1:45pm - 2:45pm",
+          "name": "Seniors"
+        }]
+      }
     }]
   },
   "events": {
