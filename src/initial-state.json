@@ -172,39 +172,34 @@
   },
   "events": {
     "timeline": [{
-      "month": "July",
-      "name": "medals-07-21",
-      "date": "2018-07-21",
-      "label": "21",
-      "title": "Medals and Exams",
-      "subtitle": "Studio Nine",
+      "month": "September",
+      "name": "new-term",
+      "date": "2018-09-10",
+      "label": "10",
+      "title": "New Term",
       "contents": {
-        "title": "Saturday, 21st July",
-        "tbc": "is-tbc",
-        "address": "Studio Nine",
-        "locationHref": "Studio Nine",
-        "location": "Studio Nine",
-        "name": "Medals and Exams",
-        "description": "Medals and Exams",
-        "event": "Medals and Exams",
-        "eventHref": "Medals and Exams"
+        "title": "New Term Starts, 10th September",
+        "name": "New Term",
+        "description": "MGDA Starts back up again",
+        "event": "Classes",
+        "eventHref": "https://mgda.com/classes"
       }
     }, {
-      "month": "July",
-      "name": "summer-school-2018",
-      "date": "2018-07-23",
-      "label": "23",
-      "title": "(MFSD) Summer School",
-      "subtitle": "Studio Nine",
+      "month": "September",
+      "name": "auditions-2018",
+      "date": "2018-09-12",
+      "label": "12",
+      "title": "Performance Team Auditions",
+      "subtitle": "Keswick",
       "contents": {
-        "title": "Saturday, 23rd - 27th July",
-        "address": "Studio Nine",
-        "locationHref": "Studio Nine",
-        "location": "Studio Nine",
-        "name": "Summer School",
-        "description": "Summer School",
-        "event": "Summer School",
-        "eventHref": "Summer School"
+        "title": "Performance Team Auditions, 12th September",
+        "address": "6 Southey St\nKeswick\nCA12 4EF",
+        "locationHref": "https://www.google.co.uk/maps/place/Keswick+Methodist+Church/@54.6004929,-3.1365746,17z/data=!3m1!4b1!4m5!3m4!1s0x487cdb62f26fff5f:0x430eeec5c0927387!8m2!3d54.6004898!4d-3.1343806?hl=en&shorturl=1",
+        "location": "Keswick Methodist Church",
+        "name": "Performance Team Auditions",
+        "description": "An opportunity for people to audition for something",
+        "event": "Performance Team Auditions",
+        "eventHref": "Performance Team Auditions"
       }
     }, {
       "month": "August",

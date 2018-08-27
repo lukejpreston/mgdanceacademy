@@ -49,7 +49,7 @@ class ControlText extends Control {
   render () {
     return <div className={`control control-container ${this.state.active} ${this.state.filled} is-text is-${this.props.valid ? 'valid' : 'invalid'}`}>
       <label className='control-label'>{this.props.label}</label>
-      <input disabled={this.props.disabled} ref={this.controlRef} className='control-input' type='text' value={this.props.value} onFocus={() => this.focus()} onBlur={() => this.blur()} onChange={(evt) => this.change(evt.target.value)} onKeyDown={(evt) => { this.keydown(evt) }} />
+      <input disabled={this.props.disabled} ref={this.controlRef} className='control-input' type='text' value={this.props.value} onFocus={() => this.focus()} onBlur={() => this.blur()} onChange={(evt) => this.change(evt.target.value)} onKeyDown={(evt) => { this.keydown(evt) }} name={this.props.name} />
       <span className={`control-message ${this.state.shake}-${this.state.shakeCount}`}>{this.props.message}</span>
     </div>
   }
@@ -60,7 +60,7 @@ class ControlTextArea extends Control {
     return <div className={`control-container is-${this.props.valid ? 'valid' : 'invalid'}`}>
       <div className={`control ${this.state.active} ${this.state.filled} is-textarea`}>
         <label className='control-label'>{this.props.label}</label>
-        <textarea disabled={this.props.disabled} ref={this.controlRef} className='control-input' type='text' value={this.props.value} onFocus={() => this.focus()} onBlur={() => this.blur()} onChange={(evt) => this.change(evt.target.value)} />
+        <textarea disabled={this.props.disabled} ref={this.controlRef} className='control-input' type='text' value={this.props.value} onFocus={() => this.focus()} onBlur={() => this.blur()} onChange={(evt) => this.change(evt.target.value)} name={this.props.name} />
       </div>
       <span className='control-message'>{this.props.message}</span>
     </div>
@@ -102,6 +102,7 @@ class Contact extends Component {
         message: ''
       }
     }
+    this.formRef = createRef()
   }
   change (name, value) {
     const state = this.state
@@ -133,22 +134,27 @@ class Contact extends Component {
     }
     return email
   }
-  submit () {
-    const state = this.state
-    state.firstName = this.validate('firstName')
-    state.lastName = this.validate('lastName')
-    state.subject = this.validate('subject')
-    state.message = this.validate('message')
-    state.email = this.validateEmail()
+  submit (event) {
+    if (typeof event !== 'undefined') {
+      const state = this.state
+      state.firstName = this.validate('firstName')
+      state.lastName = this.validate('lastName')
+      state.subject = this.validate('subject')
+      state.message = this.validate('message')
+      state.email = this.validateEmail()
 
-    if (!state.firstName.valid) state.firstName.focus = true
-    else if (!state.lastName.valid) state.lastName.focus = true
-    else if (!state.email.valid) state.email.focus = true
-    else if (!state.subject.valid) state.subject.focus = true
-    else if (!state.message.valid) state.message.focus = true
-    else console.log('SEND THE MESSAGE')
+      let submit = false
+      if (!state.firstName.valid) state.firstName.focus = true
+      else if (!state.lastName.valid) state.lastName.focus = true
+      else if (!state.email.valid) state.email.focus = true
+      else if (!state.subject.valid) state.subject.focus = true
+      else if (!state.message.valid) state.message.focus = true
+      else submit = true
 
-    this.setState(state)
+      if (!submit) event.preventDefault()
+
+      this.setState(state)
+    }
   }
   reset () {
     this.setState({
@@ -185,9 +191,20 @@ class Contact extends Component {
     })
   }
   render () {
-    return <div className={`body-block ${this.props.active} contact`}>
+    return <form
+      onSubmit={(event) => {
+        this.submit(event)
+      }}
+      ref={this.formRef}
+      action='//formspree.io/melaniegpreston@gmail.com'
+      method='post'
+      className={`body-block ${this.props.active} contact`}
+    >
+      <input type='hidden' name='_next' value='https://mgdanceacademy.com/thanks' />
+      <input type='text' name='_gotcha' style={{display: 'none'}} />
       <h2>Send a Message</h2>
       <ControlText
+        name='fname'
         disabled={this.props.disabled}
         label='First Name'
         onChange={value => this.change('firstName', value)}
@@ -195,6 +212,7 @@ class Contact extends Component {
         {...this.state.firstName}
       />
       <ControlText
+        name='lname'
         disabled={this.props.disabled}
         label='Last Name'
         onChange={value => this.change('lastName', value)}
@@ -202,6 +220,7 @@ class Contact extends Component {
         {...this.state.lastName}
       />
       <ControlText
+        name='_replyto'
         disabled={this.props.disabled}
         label='Email'
         onChange={value => this.change('email', value)}
@@ -209,6 +228,7 @@ class Contact extends Component {
         {...this.state.email}
       />
       <ControlText
+        name='_subject'
         disabled={this.props.disabled}
         label='Subject'
         onChange={value => this.change('subject', value)}
@@ -217,12 +237,13 @@ class Contact extends Component {
       />
       <ControlTextArea
         disabled={this.props.disabled}
+        name='message'
         label='Message'
         onChange={value => this.change('message', value)}
         {...this.state.message}
       />
       <div className='control-buttons'>
-        <button disabled={this.props.disabled} className='control-button is-send' onClick={() => this.submit()}>SEND</button>
+        <input type='submit' value='Send' disabled={this.props.disabled} className='control-button is-send' />
         <button disabled={this.props.disabled} className='control-button is-reset' onClick={() => this.reset()}>RESET</button>
       </div>
       <p className='contact-warning'>
@@ -232,7 +253,7 @@ We may hold onto any information from this correspondence for future reference u
 
 All correspondance kept, will be removed when it is longer required.`}
       </p>
-    </div>
+    </form>
   }
 }
 export default Contact
