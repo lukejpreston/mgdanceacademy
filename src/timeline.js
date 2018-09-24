@@ -19,25 +19,29 @@ const Schedule = ({rows}) => <div className='day-contents-schedule'>
   {rows.map((row, index) => <ScheduleRow key={`schedule-row-${index}`} {...row} />)}
 </div>
 
-const Day = ({disabled, route, last, title, subtitle, active, label, contents, name}) => {
-  return <div className={`day ${active}`}>
-    {!disabled ? <Link to={`/${route}/${name}`}>
-      <div className='day-date'>
-        <span className='day-date-label'>{label}</span>
-      </div>
-    </Link> : null}
-    {last ? null : <div className='line' />}
-    <div className='day-contents'>
-      <div className='day-contents-expanded'>
-        <div className='day-contents-title'>{contents.title}</div>
-        <div className='day-contents-body'>
-          { contents.address ? <Address {...contents} disabled={disabled} active={active} /> : null }
-          { contents.schedule ? <Schedule rows={contents.schedule} /> : null }
+const Day = ({disabled, route, last, title, subtitle, active, label, contents, name, month}) => {
+  return <div>
+    <div className='day-contents-collapsed-title'>{month}</div>
+    <div className={`day ${active}`}>
+      {!disabled ? <Link to={`/${route}/${name}`}>
+        <div className='day-date'>
+          <span className='day-date-label'>{label}</span>
         </div>
-      </div>
-      <div className='day-contents-collapsed'>
-        <div className='day-contents-collapsed-title'>{title}</div>
-        {subtitle ? <div className='day-contents-collapsed-sub-title'>{subtitle}</div> : null }
+      </Link> : null}
+      {last ? null : <div className='line' />}
+      <div className='day-contents'>
+        <div className='day-contents-expanded'>
+          <div className='day-contents-title'>{contents.title}</div>
+          <div className='day-contents-body'>
+            { contents.address ? <Address {...contents} disabled={disabled} active={active} /> : null }
+            { contents.schedule ? <Schedule rows={contents.schedule} /> : null }
+          </div>
+        </div>
+        <div className='day-contents-collapsed'>
+
+          <div className='day-contents-collapsed-title'>{title}</div>
+          {subtitle ? <div className='day-contents-collapsed-sub-title'>{subtitle}</div> : null }
+        </div>
       </div>
     </div>
   </div>
