@@ -25,12 +25,6 @@ export default (state) => {
     }]
   }
 
-  state.app.events.timeline.sort((left, right) => {
-    if (left.date < right.date) return -1
-    if (left.date > right.date) return 1
-    return 0
-  })
-
   state.app.hero.links[1].to = `/events/${state.app.events.timeline[0].name}`
 
   const pathname = state.router.location.pathname

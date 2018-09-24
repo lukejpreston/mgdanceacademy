@@ -173,49 +173,161 @@
   "events": {
     "timeline": [{
       "month": "September",
-      "name": "new-term",
-      "date": "2018-09-10",
-      "label": "10",
-      "title": "New Term",
+      "name": "add-scholarships-finals",
+      "date": "2018-09-28",
+      "label": "28",
+      "title": "AAD Scholarship Finals",
+      "subtitle": "Buxton Opera House",
       "contents": {
-        "title": "New Term Starts, 10th September",
-        "name": "New Term",
-        "description": "MGDA Starts back up again",
-        "event": "Classes",
-        "eventHref": "https://mgda.com/classes"
+        "title": "AAD Scholarship Finals, 28th September",
+        "name": "AAD Scholarship Finals",
+        "address": "Water St\nBuxton\nSK17 6XN",
+        "locationHref": "https://goo.gl/maps/P8gqp8YSWFp",
+        "location": "Buxton Opera House"
       }
     }, {
-      "name": "auditions-2018",
-      "date": "2018-09-12",
-      "label": "12",
-      "title": "Performance Team Auditions",
-      "subtitle": "Keswick",
+      "month": "November",
+      "name": "blackpool-troops-awards-day",
+      "date": "2018-11-25",
+      "label": "25",
+      "title": "Blackpool Troupe Awards Day",
+      "subtitle": "Blackpool Winter Gardens",
       "contents": {
-        "title": "Performance Team Auditions, 12th September",
-        "address": "6 Southey St\nKeswick\nCA12 4EF",
-        "locationHref": "https://www.google.co.uk/maps/place/Keswick+Methodist+Church/@54.6004929,-3.1365746,17z/data=!3m1!4b1!4m5!3m4!1s0x487cdb62f26fff5f:0x430eeec5c0927387!8m2!3d54.6004898!4d-3.1343806?hl=en&shorturl=1",
-        "location": "Keswick Methodist Church",
-        "name": "Performance Team Auditions",
-        "description": "An opportunity for people to audition for something",
-        "event": "Performance Team Auditions",
-        "eventHref": "Performance Team Auditions"
+        "title": "Blackpool Troupe Awards Day, 25th November",
+        "name": "Blackpool Troupe Awards Day",
+        "address": "97 Church St\nBlackpool\nFY1 1HL",
+        "locationHref": "https://goo.gl/maps/3C6uxZHwbkT2",
+        "location": "Blackpool Winter Gardens"
+      }
+    }, {
+      "month": "December",
+      "name": "dec-medals-and-exams",
+      "date": "TBC",
+      "label": "TBC",
+      "title": "Medals and Exams",
+      "subtitle": "Studio Nine",
+      "contents": {
+        "title": "Medals and Exams, TBC December",
+        "name": "Medals and Exams",
+        "address": "Moorclose Campus\n51 Needham Dr\nWorkington\nCA14 3SY",
+        "locationHref": "https://goo.gl/maps/rDUbwnVDc5r",
+        "location": "Studio Nine"
+      }
+    }, {
+      "name": "xmas",
+      "date": "2018-12-22",
+      "label": "22",
+      "title": "Christmas Holidays",
+      "contents": {
+        "title": "Christmas Holidays, 22nd December - 8th Janurary",
+        "name": "Christmas Holidays"
+      }
+    }, {
+      "month": "February",
+      "name": "feb-hols",
+      "date": "2019-02-18",
+      "label": "18",
+      "title": "February Half Term",
+      "contents": {
+        "title": "February Half Term, 18th Feburary",
+        "name": "February Half Term"
+      }
+    }, {
+      "month": "April",
+      "name": "easter-hols",
+      "date": "2019-04-1",
+      "label": "1",
+      "title": "Easter Holidays",
+      "contents": {
+        "title": "Easter Holidays, 1st April - 14th April",
+        "name": "Easter Holidays"
+      }
+    }, {
+      "name": "aad-gala",
+      "date": "2019-04-14",
+      "label": "14",
+      "title": "AAD Gala",
+      "subtitle": "Blackpool Winter Gardens",
+      "contents": {
+        "title": "AAD Gala, 14th April",
+        "name": "AAD Gala",
+        "address": "97 Church St\nBlackpool\nFY1 1HL",
+        "locationHref": "https://goo.gl/maps/3C6uxZHwbkT2",
+        "location": "Blackpool Winter Gardens"
+      }
+    }, {
+      "month": "May",
+      "name": "may-hols",
+      "date": "2019-05-17",
+      "label": "27",
+      "title": "May Half Term",
+      "contents": {
+        "title": "May Half Term, 27th May",
+        "name": "May Half Term"
+      }
+    }, {
+      "month": "June",
+      "name": "sands",
+      "date": "2019-06-16",
+      "label": "16",
+      "title": "The Annual Show 2019",
+      "subtitle": "Sands Centre, Carlisle",
+      "contents": {
+        "title": "The Annual Show 2019, 16th June",
+        "name": "The Annual Show 2019",
+        "address": "The Sands Centre\nCarlisle\nCA1 1JQ",
+        "locationHref": "https://goo.gl/maps/iiQoqEsLHeJ2",
+        "location": "Sands Centre, Carlisle"
+      }
+    }, {
+      "name": "schols-2019",
+      "date": "2019-06-30",
+      "label": "30",
+      "title": "AAD Scholarships 2019",
+      "subtitle": "Floral Hall, Southport",
+      "contents": {
+        "title": "AAD Scholarships 2019, 30th June",
+        "name": "AAD Scholarships 2019",
+        "address": "The Promenade\nSouthport\nPR9 0DZ",
+        "locationHref": "https://goo.gl/maps/SHWiddyDFMP2",
+        "location": "Floral Hall, Southport"
+      }
+    }, {
+      "month": "July",
+      "name": "summ-hols",
+      "date": "2019-07-15",
+      "label": "15",
+      "title": "Summer Holidays",
+      "contents": {
+        "title": "Summer Holidays, 15th July",
+        "name": "Summer Holidays"
+      }
+    }, {
+      "name": "summschool",
+      "date": "2019-07-22",
+      "label": "22",
+      "title": "Summer School",
+      "subtitle": "Studio Nine",
+      "contents": {
+        "title": "Summer School, 22nd - 26th July",
+        "name": "Summer School",
+        "address": "Moorclose Campus\n51 Needham Dr\nWorkington\nCA14 3SY",
+        "locationHref": "https://goo.gl/maps/rDUbwnVDc5r",
+        "location": "Studio Nine"
       }
     }, {
       "month": "August",
-      "name": "summer-acro-intensive-2018",
-      "date": "2018-08-28",
-      "label": "28",
-      "title": "Summer Acro Intensive",
+      "name": "acro-intens",
+      "date": "2019-07-27",
+      "label": "27",
+      "title": "Acro Intensive",
       "subtitle": "Keswick",
       "contents": {
-        "title": "Tuesday, 28th - 30th August",
-        "address": "Keswick",
-        "locationHref": "Keswick",
-        "location": "Keswick",
-        "name": "Summer Acro Intensive",
-        "description": "Summer Acro Intensive",
-        "event": "Summer Acro Intensive",
-        "eventHref": "Summer Acro Intensive"
+        "title": "Acro Intensive, 27th - 29th August",
+        "name": "Acro Intensive",
+        "address": "6 Southey St\nKeswick\nCA12 4EF",
+        "locationHref": "https://www.google.co.uk/maps/place/Keswick+Methodist+Church/@54.6004929,-3.1365746,17z/data=!3m1!4b1!4m5!3m4!1s0x487cdb62f26fff5f:0x430eeec5c0927387!8m2!3d54.6004898!4d-3.1343806?hl=en&shorturl=1",
+        "location": "Keswick Methodist Church"
       }
     }]
   },
