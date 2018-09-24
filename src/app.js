@@ -4,8 +4,9 @@ import Head from './head'
 import Timeline from './timeline'
 import Contact from './contact'
 import Policies from './policies'
+import Thanks from './thanks'
 
-const Component = ({app, headActions, classesActions, eventsActions, contactActions, policiesActions}) => {
+const Component = ({app, headActions, classesActions, eventsActions, contactActions, policiesActions, thanksActions}) => {
   return <div>
     <Hero links={app.hero.links} />
     <Head {...app.head} {...headActions} />
@@ -14,6 +15,7 @@ const Component = ({app, headActions, classesActions, eventsActions, contactActi
       <Timeline route='events' {...app.events} {...eventsActions} />
       <Contact {...app.contact} {...contactActions} />
       <Policies {...app.policies} {...policiesActions} />
+      <Thanks {...app.thanks} {...thanksActions} />
     </div>
   </div>
 }

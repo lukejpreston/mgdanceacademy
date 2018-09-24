@@ -12,7 +12,7 @@ const Policy = ({title, message, link, disabled}) => <div className='policy'>
       <span className='policy-message'>{message}</span>
     </div>
 
-    {disabled ? null : <div className='content-item'><a className='policy-link' href={link}>The pdf file</a></div>}
+    {disabled ? null : <div className='content-item'><a className='policy-link' href={link}>Open the file</a></div>}
   </div>
 </div>
 

@@ -71,6 +71,20 @@
     padding-bottom: 5px;
 }
 
+
+@media(max-width: 397px) {
+    .hero-link {
+        font-size: 16px;
+    }   
+}
+
+@media(max-width: 337px) {
+    .hero-link {
+        font-size: 14px;
+    }   
+}
+
+
 .hero-link:hover,
 .hero-link:focus {
     outline: none;

@@ -4,6 +4,7 @@ const getRoute = (pathname) => {
   if (pathname.includes('contact')) route = 'contact'
   if (pathname.includes('events')) route = 'events'
   if (pathname.includes('policies')) route = 'policies'
+  if (pathname.includes('thanks')) route = 'thanks'
   return route
 }
 
@@ -76,5 +77,11 @@ export default (state) => {
   state.app.contact.disabled = route !== 'contact'
   state.app.policies.active = route === 'policies' ? 'is-active' : 'is-inactive'
   state.app.policies.disabled = route !== 'policies'
+  state.app.thanks.active = route === 'thanks' ? 'is-active' : 'is-inactive'
+  state.app.thanks.disabled = route !== 'thanks'
+
+  if (route === 'thanks') {
+    state.app.head.currentHeight = 0
+  }
   return state
 }

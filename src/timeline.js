@@ -4,8 +4,9 @@ import './timeline.css'
 
 const Address = ({disabled, linksDisabled, address, location, locationHref}) => {
   return <div className='day-contents-address'>
-    <p className='day-contents-address-content'>{address}</p>
-    {disabled || linksDisabled ? null : <a className='day-contents-address-link' href={locationHref}>{location}</a>}
+    <p className='day-contents-address-content'>{address}
+      {disabled || linksDisabled ? null : <a className='day-contents-address-link' href={locationHref}>{location}</a>}
+    </p>
   </div>
 }
 
@@ -29,8 +30,10 @@ const Day = ({disabled, route, last, title, subtitle, active, label, contents, n
     <div className='day-contents'>
       <div className='day-contents-expanded'>
         <div className='day-contents-title'>{contents.title}</div>
-        { contents.address ? <Address {...contents} disabled={disabled} active={active} /> : null }
-        { contents.schedule ? <Schedule rows={contents.schedule} /> : null }
+        <div className='day-contents-body'>
+          { contents.address ? <Address {...contents} disabled={disabled} active={active} /> : null }
+          { contents.schedule ? <Schedule rows={contents.schedule} /> : null }
+        </div>
       </div>
       <div className='day-contents-collapsed'>
         <div className='day-contents-collapsed-title'>{title}</div>
