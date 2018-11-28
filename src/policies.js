@@ -2,7 +2,7 @@ import React from 'react'
 import './policies.css'
 import Icon from './pdf-icon'
 
-const Policy = ({title, message, link, disabled}) => <div className='policy'>
+const Policy = ({ title, message, link, disabled }) => <div className='policy'>
   <Icon className='policy-image' />
   <div className='policy-info'>
     <div className='content-item'>
@@ -16,7 +16,7 @@ const Policy = ({title, message, link, disabled}) => <div className='policy'>
   </div>
 </div>
 
-const Policies = ({active, items, disabled}) => <div className={`body-block ${active} policies`}>
+const Policies = ({ active, items, disabled }) => <div className={`body-block ${active} policies`}>
   {items.map((item, index) => <Policy {...item} key={`policy-${index}`} disabled={disabled} />)}
 </div>
 

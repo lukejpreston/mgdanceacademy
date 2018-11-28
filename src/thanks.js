@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Thanks = ({active, disabled}) => {
+const Thanks = ({ active, disabled }) => {
   return <div className={`thanks body-block ${active}`}>
     <p className='contact-warning'>
       {`Thanks for getting in touch, we will get back to you as soon as possible

@@ -2,10 +2,10 @@ import React from 'react'
 import Facebook from './facebook'
 import Instagram from './instagram'
 import Icon from './mgda-icon'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import './hero.css'
 
-const Hero = ({links}) => <div className='hero'>
+const Hero = ({ links }) => <div className='hero'>
   <div className='hero-container'>
     <div className='hero-images'>
       <Link to='/'>

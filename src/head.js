@@ -1,5 +1,5 @@
-import React, {Component, createRef} from 'react'
-import {Link} from 'react-router-dom'
+import React, { Component, createRef } from 'react'
+import { Link } from 'react-router-dom'
 import ClassesIcon from './classes-icon'
 import EventsIcon from './events-icon'
 import ContactIcon from './contact-icon'
@@ -62,7 +62,7 @@ class Item extends Component {
 }
 
 Item.defaultProps = {
-  dimensions: {top: 0, height: 0}
+  dimensions: { top: 0, height: 0 }
 }
 
 class Head extends Component {
@@ -94,7 +94,7 @@ class Head extends Component {
 }
 
 Head.defaultProps = {
-  dimensions: {top: 0, height: 0}
+  dimensions: { top: 0, height: 0 }
 }
 
 export default Head

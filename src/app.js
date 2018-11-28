@@ -6,7 +6,7 @@ import Contact from './contact'
 import Policies from './policies'
 import Thanks from './thanks'
 
-const Component = ({app, headActions, classesActions, eventsActions, contactActions, policiesActions, thanksActions}) => {
+const Component = ({ app, headActions, classesActions, eventsActions, contactActions, policiesActions, thanksActions }) => {
   return <div>
     <Hero links={app.hero.links} />
     <Head {...app.head} {...headActions} />

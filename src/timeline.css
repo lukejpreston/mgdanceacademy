@@ -86,6 +86,7 @@
 }
 
 @media(max-width: 453px) {
+
     .schedule-time,
     .schedule-name {
         display: block;

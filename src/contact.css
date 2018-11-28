@@ -81,7 +81,7 @@
     border-radius: 3px;
     outline: none;
     transition: background-color 0.2s ease-in-out;
-    
+
 }
 
 .control-button:hover {
@@ -126,16 +126,25 @@
 }
 
 @keyframes shake-0 {
-    10%, 90% {
+
+    10%,
+    90% {
         transform: translateX(-1px);
     }
-    20%, 80% {
+
+    20%,
+    80% {
         transform: translateX(2px);
     }
-    30%, 50%, 70% {
+
+    30%,
+    50%,
+    70% {
         transform: translateX(-4px);
     }
-    40%, 60% {
+
+    40%,
+    60% {
         transform: translateX(4px);
     }
 }
@@ -145,16 +154,25 @@
 }
 
 @keyframes shake-1 {
-    10%, 90% {
+
+    10%,
+    90% {
         transform: translateX(-1px);
     }
-    20%, 80% {
+
+    20%,
+    80% {
         transform: translateX(2px);
     }
-    30%, 50%, 70% {
+
+    30%,
+    50%,
+    70% {
         transform: translateX(-4px);
     }
-    40%, 60% {
+
+    40%,
+    60% {
         transform: translateX(4px);
     }
 }

@@ -1,4 +1,4 @@
-import React, {Component, createRef} from 'react'
+import React, { Component, createRef } from 'react'
 import './contact.css'
 
 const emailRegex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/g
@@ -201,7 +201,7 @@ class Contact extends Component {
       className={`body-block ${this.props.active} contact`}
     >
       <input type='hidden' name='_next' value='https://mgdanceacademy.com/thanks' />
-      <input type='text' name='_gotcha' style={{display: 'none'}} />
+      <input type='text' name='_gotcha' style={{ display: 'none' }} />
       <h2>Send a Message</h2>
       <ControlText
         name='fname'

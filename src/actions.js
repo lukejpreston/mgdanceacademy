@@ -1,4 +1,4 @@
-export default (dispatch, {history}) => {
+export default (dispatch, { history }) => {
   return {
     headActions: {
       mount (payload) {
