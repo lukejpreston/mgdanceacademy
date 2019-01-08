@@ -7,7 +7,7 @@
       "message": "Don't be late for our Acro, Ballet, Tap and Modern classes.",
       "link": {
         "label": "Join a class",
-        "to": "/classes/monday"
+        "to": "/classes/tuesday"
       }
     }, {
       "icon": "events",
@@ -40,30 +40,6 @@
   },
   "classes": {
     "timeline": [{
-      "name": "monday",
-      "label": "M",
-      "title": "Kendal",
-      "contents": {
-        "title": "Monday",
-        "address": "Hallgarth Cir\nKendal\nLA9 5NU",
-        "location": "Hallgarth Community Centre",
-        "locationHref": "https://www.google.co.uk/maps/place/Hallgarth+Community+Centre/@54.3391203,-2.7594475,17z/data=!3m1!4b1!4m5!3m4!1s0x487c8d92c1afebfd:0x18e5c0c3081cb089!8m2!3d54.3391203!4d-2.7572589?hl=en",
-        "schedule": [{
-          "time": "4pm - 5pm",
-          "name": "Babes"
-        }, {
-          "time": "5pm - 6pm",
-          "name": "Juniors/Inters"
-        }, {
-          "time": "6pm - 7pm",
-          "name": "Acro"
-        }, {
-          "time": "7pm - 8pm",
-          "name": "Private Lessons",
-          "open": "is-private"
-        }]
-      }
-    }, {
       "name": "tuesday",
       "label": "T",
       "title": "Keswick",
@@ -172,57 +148,6 @@
   },
   "events": {
     "timeline": [{
-      "month": "September",
-      "name": "add-scholarships-finals",
-      "date": "2018-09-28",
-      "label": "28",
-      "title": "AAD Scholarship Finals",
-      "subtitle": "Buxton Opera House",
-      "contents": {
-        "title": "AAD Scholarship Finals, 28th September",
-        "name": "AAD Scholarship Finals",
-        "address": "Water St\nBuxton\nSK17 6XN",
-        "locationHref": "https://goo.gl/maps/P8gqp8YSWFp",
-        "location": "Buxton Opera House"
-      }
-    }, {
-      "month": "November",
-      "name": "blackpool-troops-awards-day",
-      "date": "2018-11-25",
-      "label": "25",
-      "title": "Blackpool Troupe Awards Day",
-      "subtitle": "Blackpool Winter Gardens",
-      "contents": {
-        "title": "Blackpool Troupe Awards Day, 25th November",
-        "name": "Blackpool Troupe Awards Day",
-        "address": "97 Church St\nBlackpool\nFY1 1HL",
-        "locationHref": "https://goo.gl/maps/3C6uxZHwbkT2",
-        "location": "Blackpool Winter Gardens"
-      }
-    }, {
-      "month": "December",
-      "name": "dec-medals-and-exams",
-      "date": "TBC",
-      "label": "TBC",
-      "title": "Medals and Exams",
-      "subtitle": "Studio Nine",
-      "contents": {
-        "title": "Medals and Exams, TBC December",
-        "name": "Medals and Exams",
-        "address": "Moorclose Campus\n51 Needham Dr\nWorkington\nCA14 3SY",
-        "locationHref": "https://goo.gl/maps/rDUbwnVDc5r",
-        "location": "Studio Nine"
-      }
-    }, {
-      "name": "xmas",
-      "date": "2018-12-22",
-      "label": "22",
-      "title": "Christmas Holidays",
-      "contents": {
-        "title": "Christmas Holidays, 22nd December - 8th Janurary",
-        "name": "Christmas Holidays"
-      }
-    }, {
       "month": "February",
       "name": "feb-hols",
       "date": "2019-02-18",
@@ -231,6 +156,20 @@
       "contents": {
         "title": "February Half Term, 18th Feburary",
         "name": "February Half Term"
+      }
+    }, {
+      "month": "March",
+      "name": "meds",
+      "date": "2019-02-30",
+      "label": "30",
+      "title": "Medals and Exams",
+      "subtitle": "Studio Nine",
+      "contents": {
+        "title": "Medals and Exams",
+        "name": "Medals and Exams",
+        "address": "Moorclose Campus\n51 Needham Dr\nWorkington\nCA14 3SY",
+        "locationHref": "https://goo.gl/maps/rDUbwnVDc5r",
+        "location": "Studio Nine"
       }
     }, {
       "month": "April",
@@ -293,6 +232,29 @@
         "location": "Floral Hall, Southport"
       }
     }, {
+      "name": "kes-show",
+      "date": "2019-07-05",
+      "label": "05",
+      "title": "Keswick Showcase/End of Summer Term",
+      "subtitle": "Keswick",
+      "contents": {
+        "title": "Keswick Showcase/End of Summer Term",
+        "name": "Keswick Showcase/End of Summer Term"
+      }
+    }, {
+      "name": "ry-n",
+      "date": "2019-07-14",
+      "label": "14",
+      "title": "Rhythm Nation",
+      "subtitle": "Lakes School, Windermere",
+      "contents": {
+        "title": "Rhythm Nation",
+        "name": "Rhythm Nation",
+        "address": "Troutbeck Bridge\nCumbria\nLA23 1HW",
+        "locationHref": "https://goo.gl/maps/yQAF7twoVoP2",
+        "location": "The Lakes School"
+      }
+    }, {
       "month": "July",
       "name": "summ-hols",
       "date": "2019-07-15",
@@ -328,6 +290,54 @@
         "address": "6 Southey St\nKeswick\nCA12 4EF",
         "locationHref": "https://www.google.co.uk/maps/place/Keswick+Methodist+Church/@54.6004929,-3.1365746,17z/data=!3m1!4b1!4m5!3m4!1s0x487cdb62f26fff5f:0x430eeec5c0927387!8m2!3d54.6004898!4d-3.1343806?hl=en&shorturl=1",
         "location": "Keswick Methodist Church"
+      }
+    }, {
+      "month": "September",
+      "name": "aut-ter",
+      "date": "2019-09-09",
+      "label": "09",
+      "title": "Autum Term",
+      "contents": {
+        "title": "Autum Term",
+        "name": "Autum Term"
+      }
+    }, {
+      "name": "schol-rev-day",
+      "date": "2019-09-15",
+      "label": "15",
+      "title": "Scholarship Revision Day",
+      "subtitle": "Brinnington",
+      "contents": {
+        "title": "Scholarship Revision Day",
+        "name": "Scholarship Revision Day",
+        "locationHref": "https://goo.gl/maps/vv6t6ro75i52",
+        "location": "Brinnington"
+      }
+    }, {
+      "name": "schol-fin",
+      "date": "2019-10-20",
+      "label": "20",
+      "title": "Scholarships (Finals)",
+      "subtitle": "Opera House, Buxton",
+      "contents": {
+        "title": "Scholarships (Finals)",
+        "name": "Scholarships (Finals)",
+        "address": "Water St\nBuxton\nSK17 6XN",
+        "locationHref": "https://goo.gl/maps/LFxRce2qar32",
+        "location": "Opera House, Buxton"
+      }
+    }, {
+      "name": "truope-awards-day",
+      "date": "2019-11-24",
+      "label": "24",
+      "title": "Troupe Awards Day",
+      "subtitle": "Blackpool Winter Gardens",
+      "contents": {
+        "title": "Troupe Awards Day",
+        "name": "Troupe Awards Day",
+        "address": "97 Church St\nBlackpool\nFY1 1HL",
+        "locationHref": "https://goo.gl/maps/3C6uxZHwbkT2",
+        "location": "Blackpool Winter Gardens"
       }
     }]
   },

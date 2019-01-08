@@ -11,7 +11,7 @@ const getRoute = (pathname) => {
 export default (state) => {
   state.app.hero = {
     links: [{
-      to: '/classes/monday',
+      to: '/classes/tuesday',
       label: 'Classes'
     }, {
       to: '/events',
